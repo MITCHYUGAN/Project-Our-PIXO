@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../App.css"
+import "./Gallery.css"
 
 function GallerySection() {
   return (

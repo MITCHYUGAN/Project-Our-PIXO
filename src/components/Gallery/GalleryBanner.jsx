@@ -1,5 +1,3 @@
-import React from 'react'
-
 function GalleryBanner() {
   return (
     <div className='gallery-banner'>

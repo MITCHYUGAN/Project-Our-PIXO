@@ -1,6 +1,4 @@
 // MarketplaceSection.js
-import React from "react";
-
 function MarketplaceSection() {
   return (
     <div>

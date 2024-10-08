@@ -1,6 +1,4 @@
 // BookingsSection.js
-import React from "react";
-
 function BookingSection() {
   return (
     <div>

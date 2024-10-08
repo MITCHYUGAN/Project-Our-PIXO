@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../../App.css";
+import { useState } from "react";
+import "./Gallery.css"
 import GallerySection from "./GallerySection";
 import BookingSection from "./BookingSection";
 import MarketplaceSection from "./MarketplaceSection";
