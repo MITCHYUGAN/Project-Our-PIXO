@@ -1,0 +1,58 @@
+.landingPage{
+    width: 100%;
+    height: 150vh;
+    /* height: 150vh; */
+    background-color: var(--main-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    font-family: "Montserrat", sans-serif;
+    gap: 100px;
+
+    .landing-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        color: white;
+        margin-top: 300px;
+        width: 60%;
+        text-align: center;
+        align-items: center;
+
+        h4{
+            font-size: 2rem;
+            opacity: 0.5;
+        }
+
+        h1{
+            font-size: 4rem;
+        }
+
+        p{
+            font-size: 1.8rem;
+            width: 80%;
+        }
+
+        button{
+            font-family: "Raleway", sans-serif;
+            font-size: 25px;
+            padding: 25px 50px;
+            cursor: pointer;
+            color: var(--main-red);
+            background-color: white;
+            border: none;
+            border-radius: var(--border-radius);
+        }
+    }
+
+    .landing-img{
+        width: 90%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
