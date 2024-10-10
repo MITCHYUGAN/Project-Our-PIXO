@@ -1,6 +1,7 @@
 .showcase-wrapper {
     text-align: center;
     width: 100%;
+    font-family: sans-serif;
 }
 .showcase-sections {
     display: flex;
