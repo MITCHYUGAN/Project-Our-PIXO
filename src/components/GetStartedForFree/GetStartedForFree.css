@@ -1,0 +1,119 @@
+.getStartedForFree {
+    background-color: #F9E7EA;
+    width: 100%;
+    min-height: 60vh;
+    padding: 50px 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+
+    .arrow1,
+    .arrow2,
+    .arrow3,
+    .arrow4 {
+        position: absolute;
+        width: 100px;
+    }
+
+    .arrowBig {
+        position: absolute;
+        width: 600px;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    .arrow1 {
+        top: 0;
+        left: 0;
+    }
+
+    .arrow2 {
+        top: 0;
+        right: 0;
+    }
+
+    .arrow3 {
+        bottom: 0;
+        left: 0;
+    }
+
+    .arrow4 {
+        bottom: 0;
+        right: 0;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+        color: black;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+
+        span {
+            color: var(--main-red);
+        }
+    }
+
+    p {
+        font-size: 2.3rem;
+        width: min(1050px, 90%);
+        line-height: 140%;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+    }
+
+
+    .getStartedForFreeButtons {
+        display: flex;
+        gap: 20px;
+
+        button {
+            font-family: "Raleway", sans-serif;
+            font-size: 25px;
+            padding: 25px 50px;
+            cursor: pointer;
+            color: white;
+            background-color: var(--main-red);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+        }
+
+        .seeDemoBtn {
+            background-color: #BC203B;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .getStartedForFree {
+        gap: 10px;
+        padding: 10px;
+
+        .arrow1,
+        .arrow2,
+        .arrow3,
+        .arrow4 {
+            width: 70px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        P {
+            font-size: 1.8rem;
+        }
+
+        .getStartedForFreeButtons {
+            flex-direction: column;
+
+            button {
+                font-size: 20px;
+                padding: 20px 35px;
+            }
+        }
+    }
+}
