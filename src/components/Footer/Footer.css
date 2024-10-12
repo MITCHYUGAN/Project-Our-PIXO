@@ -1,0 +1,119 @@
+.footer {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: "Raleway", sans-serif;
+    justify-content: space-between;
+
+    .footerWrapper {
+        display: flex;
+        width: min(2000px, 90%);
+        justify-content: space-between;
+        gap: 50px;
+
+        .footerheading {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            img {
+                width: 250px;
+            }
+
+            div {
+                display: flex;
+                gap: 40px;
+
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .footerContents {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+
+            .footerContent {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+
+                h3 {
+                    font-size: 2.5rem;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 1.8rem;
+                }
+            }
+
+            .footerContent2 {
+                justify-content: space-between;
+                width: 55%;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .footerText {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer{
+        .footerWrapper{
+            .footerContents{
+                .footerContent2{
+                    flex-direction: column;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 985px) {
+    .footer{
+        .footerWrapper{
+            flex-direction: column;
+            gap: 100px;
+
+            .footerContents{
+                width: 100%;
+            }
+        }
+
+        .footerText{
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer{
+        .footerWrapper{
+            .footerContents{
+                .footerContent{
+                    h3{
+                        font-size: 2rem;
+                    }
+                    
+                    p{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

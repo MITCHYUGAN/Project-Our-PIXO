@@ -3,7 +3,7 @@ import kcSunshineImage from "../assets/kc-sunshine.png";
 import limeLight from "../assets/lime-light.png";
 import timiAkindele from "../assets/timi-akindele.png";
 import familyPortraits from "../assets/family-portraits.png";
-import focalPoint from "../assets/focal-point.png";
+import focalPoint from "../assets/focal-point.svg";
 import johnTwistImage2 from "../assets/john-twist-2.png";
 
 export const galleryData = [
