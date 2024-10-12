@@ -1,94 +1,136 @@
-.landingPage{
+.landingPage {
     width: 100%;
-    height: 140vh;
-    background-color: var(--main-red);
+    height: 190vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
     font-family: "Montserrat", sans-serif;
-    gap: 100px;
 
-    .landing-contents{
+    .landingPage-content-wrapper {
+        width: 100%;
+        height: 70%;
+        background-color: var(--main-red);
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        color: white;
-        margin-top: 350px;
-        width: min(1250px, 80%);
-        text-align: center;
         align-items: center;
+        gap: 80px;
+        justify-self: flex-end;
 
-        h4{
-            font-size: 2rem;
-            opacity: 0.5;
+
+        .landing-contents {
+            margin-top: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            color: white;
+            width: min(1250px, 80%);
+            text-align: center;
+            align-items: center;
+
+            h4 {
+                font-size: 2rem;
+                opacity: 0.5;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                width: 80%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 300;
+            }
+
+            button {
+                font-family: "Raleway", sans-serif;
+                font-size: 25px;
+                padding: 25px 50px;
+                cursor: pointer;
+                color: var(--main-red);
+                background-color: white;
+                border: none;
+                border-radius: var(--border-radius);
+                font-weight: 700;
+            }
         }
 
-        h1{
-            font-size: 4rem;
+        .landing-img {
+            width: 90%;
+            justify-self: flex-end;
+
+            img {
+                width: 100%;
+            }
         }
 
-        p{
-            font-size: 1.8rem;
-            width: 80%;
-        }
-
-        button{
+        .landingBottomText {
+            text-align: center;
+            font-size: 40px;
             font-family: "Raleway", sans-serif;
-            font-size: 25px;
-            padding: 25px 50px;
-            cursor: pointer;
-            color: var(--main-red);
-            background-color: white;
-            border: none;
-            border-radius: var(--border-radius);
-        }
-    }
 
-    .landing-img{
-        width: 90%;
-
-        img{
-            width: 100%;
+            span {
+                color: #EE2145;
+            }
         }
     }
 }
 
-@media (max-width: 1500px) {
-    .landingPage{
-        height: 120vh;
+@media (max-width: 1920px) {
+    .landingPage {
+        height: 150vh;
     }
 }
 
 @media (max-width: 900px) {
-    .landingPage{
-        .landing-contents{
-            margin-top: 250px;
-            width: 95%;
+    .landingPage {
+        .landingPage-content-wrapper {
+            .landing-contents {
+                margin-top: 250px;
+                width: 95%;
+            }
+    
+            .landingBottomText {
+                font-size: 30px;
+            }
         }
     }
 }
 
 @media (max-width: 630px) {
-    .landingPage{
-        height: 100vh;
+    .landingPage {
+        height: 110vh;
 
-        .landing-contents{
-            margin-top: 250px;
-            width: 95%;
+        .landingPage-content-wrapper {
+            height: 90%;
+            .landing-contents {
+                margin-top: 250px;
+                width: 95%;
 
-            h4{
-                font-size: 1.2rem;
+                h4 {
+                    font-size: 1.2rem;
+                }
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    font-size: 20px;
+                    padding: 20px 35px;
+                }
             }
 
-            h1{
-                font-size: 3rem;
-            }
-
-            p{
-                font-size: 1.5rem;
+            .landingBottomText {
+                font-size: 20px;
             }
         }
     }
