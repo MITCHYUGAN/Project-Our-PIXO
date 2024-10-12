@@ -32,7 +32,7 @@ function MainComponent() {
     <div className="showcase-wrapper">
       <div className="showcase-sections">
       <GalleryBanner />
-      <div>
+      <div className="sections-wrapper">
       <select value={selectedSection} onChange={handleSelectionChange}>
         <option value="client-gallery">Client Gallery</option>
         <option value="bookings">Bookings</option>
