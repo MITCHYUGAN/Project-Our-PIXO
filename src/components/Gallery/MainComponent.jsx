@@ -4,6 +4,8 @@ import GallerySection from "./GallerySection";
 import BookingSection from "./BookingSection";
 import MarketplaceSection from "./MarketplaceSection";
 import GalleryBanner from "./GalleryBanner";
+import GetStartedForFree from "../GetStartedForFree/GetStartedForFree";
+import DropdownArrow from "./assets/down-arrow-icon.svg"
 
 function MainComponent() {
   // State to store the current selection
@@ -33,15 +35,19 @@ function MainComponent() {
       <div className="showcase-sections">
       <GalleryBanner />
       <div className="sections-wrapper">
+        <div className="select-option-wrapper">
       <select value={selectedSection} onChange={handleSelectionChange}>
         <option value="client-gallery">Client Gallery</option>
         <option value="bookings">Bookings</option>
         <option value="marketplace">Marketplace</option>
       </select>
+      <img src={DropdownArrow} alt="select drop down arrow" />
+        </div>
 
       {/* Render the selected section below the dropdown */}
       <div className="section-container">{renderSelectedSection()}</div>
       </div>
+      <GetStartedForFree />
       </div>
     </div>
   );

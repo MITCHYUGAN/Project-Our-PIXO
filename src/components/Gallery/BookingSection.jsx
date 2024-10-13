@@ -1,8 +1,10 @@
+import ComingSoon from "./ComingSoon";
+
 // BookingsSection.js
 function BookingSection() {
   return (
-    <div>
-      <h1>Bookings Section</h1>
+    <div className="booking-section">
+      <ComingSoon />
     </div>
   );
 }

@@ -1,10 +1,10 @@
-import johnTwistImage from "../assets/john-twist.png";
-import kcSunshineImage from "../assets/kc-sunshine.png";
-import limeLight from "../assets/lime-light.png";
-import timiAkindele from "../assets/timi-akindele.png";
-import familyPortraits from "../assets/family-portraits.png";
+import johnTwistImage from "../assets/john-twist.svg";
+import kcSunshineImage from "../assets/kc-sunshine.svg";
+import limeLight from "../assets/lime-light.svg";
+import timiAkindele from "../assets/timi-akindele.svg";
+import familyPortraits from "../assets/family-portraits.svg";
 import focalPoint from "../assets/focal-point.svg";
-import johnTwistImage2 from "../assets/john-twist-2.png";
+import johnTwistImage2 from "../assets/john-twist-2.svg";
 
 export const galleryData = [
   {
