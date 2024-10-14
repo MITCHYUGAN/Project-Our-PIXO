@@ -18,8 +18,6 @@ const Header = () => {
       setActiveNav("")
       setMenuBar(menubar)
     }
-    console.log("me");
-    
   }
 
   return (
