@@ -11,4 +11,8 @@
 :root{
     --main-red: #872032;
     --border-radius: 20px;
+    --HeadingFS: clamp(38px, 2.5vw, 4vw);
+    --Heading4FS: clamp(20px, 1.5vw, 2vw);
+    --ParagraphFS: clamp(20px, 1.3vw, 1.5vw);
+    --buttonFS: clamp(20px, 1.3vw, 1.5vw);
 }
