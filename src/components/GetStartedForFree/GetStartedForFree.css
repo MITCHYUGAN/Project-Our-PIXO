@@ -18,7 +18,7 @@
 
     .arrowBig {
         position: absolute;
-        width: 600px;
+        width: 400px;
         opacity: 0.8;
         z-index: -1;
     }
@@ -45,7 +45,7 @@
 
 
     h1 {
-        font-size: 4rem;
+        font-size: clamp(30px, 3vw, 4.5vw);
         color: black;
         text-align: center;
         font-family: "Montserrat", sans-serif;
@@ -56,8 +56,8 @@
     }
 
     p {
-        font-size: 2.3rem;
-        width: min(1050px, 90%);
+        font-size: clamp(20px, 1.5vw, 1.8vw);
+        width: min(900px, 90%);
         line-height: 140%;
         text-align: center;
         font-family: "Raleway", sans-serif;
@@ -70,8 +70,8 @@
 
         button {
             font-family: "Raleway", sans-serif;
-            font-size: 25px;
-            padding: 25px 50px;
+            font-size: var(--buttonFS);
+            padding: 19px 30px;
             cursor: pointer;
             color: white;
             background-color: var(--main-red);
@@ -99,21 +99,8 @@
             width: 70px;
         }
 
-        h1 {
-            font-size: 3rem;
-        }
-
-        P {
-            font-size: 1.8rem;
-        }
-
         .getStartedForFreeButtons {
             flex-direction: column;
-
-            button {
-                font-size: 20px;
-                padding: 20px 35px;
-            }
         }
     }
 }
