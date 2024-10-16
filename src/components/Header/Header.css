@@ -36,7 +36,7 @@
             
             li{
                 cursor: pointer;
-                font-size: clamp(0.8rem, 1rem, 1.5rem);
+                font-size: clamp(16px, 1vw, 1.5vw);
             }
             li a {
                 color: black;
@@ -45,7 +45,7 @@
             
             button{
                 font-family: "Raleway", sans-serif;
-                font-size: 16px;
+                font-size: clamp(16px, 1vw, 2vw);
                 padding: 17px 30px;
                 cursor: pointer;
                 color: white;
@@ -53,6 +53,18 @@
                 border: none;
                 border-radius: var(--border-radius);
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .header{
+        height: 120px;
+
+        .headerWrapper{
+            .navbar{
+                width: 750px;
             }
         }
     }
