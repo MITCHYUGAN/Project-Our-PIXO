@@ -55,6 +55,7 @@
         flex-wrap: wrap;
         row-gap: 50px;
         position: relative;
+        margin-top: 30px;
 
         .standouts {
             display: flex;
