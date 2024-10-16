@@ -1,7 +1,7 @@
 .whyourpixo {
     width: 100%;
     min-height: 60vh;
-    padding: 40px 20px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -48,7 +48,7 @@
 
     .whyourpixocontents {
         font-family: "Raleway", sans-serif;
-        width: min(1500px, 100%);
+        width: min(1500px, 90%);
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -59,7 +59,8 @@
 
         .standouts {
             display: flex;
-            width: min(550px, 90%);
+            /* width: min(550px, 100%); */
+            width: 49%;
             align-items: center;
             gap: 20px;
 
@@ -88,19 +89,21 @@
     }
 }
 
-@media (min-width: 1800px) {
+@media (max-width: 1126px) {
     .whyourpixo{
-        min-height: 90vh;
-        .whyourpixoheading{
-            .whyourpixoheadingcontents{
-                width: 400px;
+        .whyourpixocontents{
+            .standouts{
+                width: 80%;
             }
         }
-        .whyourpixocontents{
-            width: 90%;
+    }
+}
 
+@media (max-width: 600px) {
+    .whyourpixo{
+        .whyourpixocontents{
             .standouts{
-                width: 800px;
+                width: 100%;
             }
         }
     }
