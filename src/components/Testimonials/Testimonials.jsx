@@ -1,11 +1,14 @@
 import img1 from "./assets/img1.svg"
 import arrowLeft from "./assets/arrow-left.svg"
 import arrowRight from "./assets/arrow-right.svg"
+import styledArrow1 from "./assets/styledArrow1.svg"
+import styledArrow2 from "./assets/styledArrow2.svg"
 import "./Testimonials.css"
 
 const Testimonials = () => {
   return (
     <section className="testimonial">
+      <img src={styledArrow1} className="styledArrow1" alt="" />
       <h1 className="testimonialHeadingText">What our Clients are saying</h1>
       <div className="slides">
         <div className="slide">
@@ -39,6 +42,7 @@ const Testimonials = () => {
           <span></span>
         </div>
       </div>
+      <img src={styledArrow2} className="styledArrow2"  alt="" />
     </section>
   )
 }

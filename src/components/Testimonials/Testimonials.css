@@ -8,6 +8,24 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    position: relative;
+    z-index: 1;
+
+    .styledArrow1, .styledArrow2{
+        width: 150px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .styledArrow2{
+        top: 10%;
+        right: 0;
+    }
+
+    .styledArrow1{
+        bottom: 10%;
+        left: 0;
+    }
 
     .testimonialHeadingText{
         font-family: "Montserrat", sans-serif;
