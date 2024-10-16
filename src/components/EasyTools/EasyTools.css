@@ -67,7 +67,7 @@
     button {
         font-family: "Raleway", sans-serif;
         font-size: var(--buttonFS);
-        padding: 17px 30px;
+        padding: 19px 30px;
         cursor: pointer;
         color: white;
         background-color: var(--main-red);
