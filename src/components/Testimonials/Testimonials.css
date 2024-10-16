@@ -7,24 +7,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
 
     .testimonialHeadingText{
         font-family: "Montserrat", sans-serif;
-        font-size: 4rem;
+        font-size: var(--HeadingFS);
         color: white;
         text-align: center;
     }
 
     .slides{
         /* width: min(1800px, 90%); */
-        width: min(800px, 90%);
+        width: min(700px, 90%);
         display: flex;
         align-items: center;
 
         .slide{
-            width: min(800px, 100%);
-            min-height: 450px;
+            width: min(700px, 100%);
+            min-height: 330px;
             background-color: white;
             border-radius: 20px;
             align-items: center;
@@ -36,18 +36,18 @@
                 gap: 20px;
 
                 img{
-                    width: 90px;
+                    width: 70px;
                 }
                 
                 p{
-                    font-size: 1.8rem;
+                    font-size: calc(var(--ParagraphFS) + 1px);
                 }
                 
                 .slidesContents{
                     align-self: center;
                     display: flex;
                     flex-direction: column;
-                    gap: 50px;
+                    gap: 40px;
     
                     .slidesHeading{
                         display: flex;
@@ -55,11 +55,11 @@
                         gap: 10px;
     
                         h4{
-                            font-size: 2.5rem;
+                            font-size: var(--Heading4FS);
                         }
     
                         p{
-                            font-size: 1.5rem;
+                            font-size: var(--ParagraphFS);
                         }
                     }
                 }
@@ -72,28 +72,30 @@
         flex-direction: column;
         gap: 50px;
         align-items: center;
+        margin-top: 20px;
 
         .slidesArrow{
             display: flex;
-            gap: 50px;
+            gap: 20px;
 
             img{
-                width: 70px;
+                width: 40px;
                 cursor: pointer;
             }
         }
 
         .slidesCircles{
             display: flex;
-            gap: 20px;
+            gap: 10px;
 
             span{
-                width: 20px;
-                height: 20px;
+                width: 10px;
+                height: 10px;
                 border-radius: 20px;
                 background-color: white;
                 opacity: 0.8;
-                cursor: pointer;
+                cursor: cell;
+                z-index: 1;
             }
         }
     }
