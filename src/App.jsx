@@ -1,6 +1,6 @@
 import Header from './components/Header/Header'
 import LandingPage from './components/LandingPage/LandingPage'
-import MainComponent from './components/Gallery/MainComponent'
+import MainComponent from './Pages/Gallery/MainComponent'
 import './App.css'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
