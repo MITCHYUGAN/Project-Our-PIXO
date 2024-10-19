@@ -4,7 +4,7 @@ import GallerySection from "./GallerySection";
 import BookingSection from "./BookingSection";
 import MarketplaceSection from "./MarketplaceSection";
 import GalleryBanner from "./GalleryBanner";
-import GetStartedForFree from "../GetStartedForFree/GetStartedForFree";
+import GetStartedForFree from "../../components/GetStartedForFree/GetStartedForFree";
 import DropdownArrow from "./assets/down-arrow-icon.svg"
 
 function MainComponent() {
