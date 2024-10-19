@@ -1,10 +1,110 @@
-.whyourpixo{
+.whyourpixo {
     width: 100%;
-    height: 100vh;
-    /* background-color: red; */
-    margin-top: 100px;
+    min-height: 60vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 
-    .whyourpixoheading{
+    .whyourpixoheading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        gap: 20px;
 
+        .whyourpixoheadingcontents {
+            width: min(50%, 200px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 50px;
+
+            h4 {
+                font-size: clamp(18px, 1vw, 1.3vw);
+                text-align: center;
+                color: var(--main-red);
+            }
+
+            img {
+                position: absolute;
+                top: -30px;
+                left: -30px;
+                width: 80px;
+            }
+        }
+
+        h1 {
+            font-size: var(--HeadingFS);
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .whyourpixocontents {
+        font-family: "Raleway", sans-serif;
+        width: min(1500px, 90%);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        position: relative;
+        margin-top: 30px;
+
+        .standouts {
+            display: flex;
+            /* width: min(550px, 100%); */
+            width: 49%;
+            align-items: center;
+            gap: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h4{
+                    font-size: var(--Heading4FS);
+                }
+
+                p {
+                    width: 100%;
+                    font-size: var(--ParagraphFS);
+                }
+            }
+        }
+
+        .icon2{
+            position: absolute;
+            bottom: -50px;
+            right: 20%;
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width: 1126px) {
+    .whyourpixo{
+        .whyourpixocontents{
+            .standouts{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .whyourpixo{
+        .whyourpixocontents{
+            .standouts{
+                width: 100%;
+            }
+        }
     }
 }

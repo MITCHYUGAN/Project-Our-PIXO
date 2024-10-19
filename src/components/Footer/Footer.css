@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 20px 20px 20px;
     font-family: "Raleway", sans-serif;
     justify-content: space-between;
 
@@ -21,15 +21,15 @@
             gap: 30px;
 
             img {
-                width: 250px;
+                width: 200px;
             }
 
             div {
                 display: flex;
-                gap: 40px;
+                gap: 30px;
 
                 img {
-                    width: 50px;
+                    width: 30px;
                 }
             }
         }
@@ -46,13 +46,13 @@
 
 
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: var(--Heading4FS);
                     padding-bottom: 20px;
                 }
 
                 p {
                     text-align: left;
-                    font-size: 1.8rem;
+                    font-size: var(--ParagraphFS);
                 }
             }
 
@@ -66,7 +66,7 @@
 
     .footerText {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: var(--ParagraphFS - 1);
     }
 }
 
@@ -83,11 +83,11 @@
     }
 }
 
-@media (max-width: 985px) {
+@media (max-width: 650px) {
     .footer{
         .footerWrapper{
             flex-direction: column;
-            gap: 100px;
+            gap: 60px;
 
             .footerContents{
                 width: 100%;
@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .footer{
         .footerWrapper{
             .footerContents{
@@ -116,4 +116,4 @@
             }
         }
     }
-}
+} */

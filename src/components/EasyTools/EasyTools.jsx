@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { EasyToolsData } from "./EasyToolsData.js"
 import arrow1 from './assets/arrow1.svg'
 import arrow2 from './assets/arrow2.svg'
@@ -6,7 +7,7 @@ import "./EasyTools.css"
 const EasyTools = () => {
     return (
         <section className="easytools">
-            <img className="arrow1"  src={arrow1} alt="" />
+            <img className="arrow1" src={arrow1} alt="" />
             <h1>Easy to use tools</h1>
             <div className="easytoolswrapper">
                 {
@@ -25,8 +26,10 @@ const EasyTools = () => {
                     })
                 }
             </div>
-            <button>See all features</button>
-            <img  className="arrow2" src={arrow2} alt="" />
+            <Link to="/features">
+                <button>See all features</button>
+            </Link>
+            <img className="arrow2" src={arrow2} alt="" />
         </section>
     )
 }

@@ -23,22 +23,23 @@
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: var(--HeadingFS);
         font-family: "Montserrat", sans-serif;
         text-align: center;
     }
 
     .easytoolswrapper {
         display: flex;
-        width: min(1800px, 90%);
+        width: 90%;
         flex-wrap: wrap;
-        gap: 100px;
+        gap: 20px;
         align-items: center;
         justify-content: center;
         font-family: "Raleway", sans-serif;
+        row-gap: 50px;
 
         .tool {
-            width: min(800px, 80%);
+            width: 49%;
             display: flex;
             gap: 10px;
 
@@ -53,11 +54,11 @@
 
 
                 h3 {
-                    font-size: 2.3rem;
+                    font-size: var(--Heading4FS);
                 }
 
                 p {
-                    font-size: 1.8rem;
+                    font-size: var(--ParagraphFS);
                 }
             }
         }
@@ -65,8 +66,8 @@
 
     button {
         font-family: "Raleway", sans-serif;
-        font-size: 25px;
-        padding: 25px 50px;
+        font-size: var(--buttonFS);
+        padding: 19px 30px;
         cursor: pointer;
         color: white;
         background-color: var(--main-red);
@@ -76,32 +77,11 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1127px) {
     .easytools {
-
-        .arrow1,
-        .arrow2 {
-            width: 150px;
-        }
-
         .easytoolswrapper {
-
             .tool {
-                width: 100%;
-
-                img {
-                    width: 80px;
-                }
-
-                div {
-                    h3 {
-                        font-size: 2rem;
-                    }
-
-                    p {
-                        font-size: 1.5rem;
-                    }
-                }
+                width: 80%;
             }
         }
     }
@@ -115,29 +95,14 @@
             width: 100px;
         }
 
-        h1 {
-            font-size: 3rem;
-        }
-
         .easytoolswrapper {
-
             .tool {
+                width: 100%;
 
-                div {
-                    h3 {
-                        font-size: 1.6rem;
-                    }
-
-                    p {
-                        font-size: 1.3rem;
-                    }
+                img{
+                    width: 60px;
                 }
             }
-        }
-
-        button{
-            font-size: 20px;
-            padding: 20px 35px;
         }
     }
 }
