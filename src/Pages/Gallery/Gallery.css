@@ -112,6 +112,7 @@
 .client-galleries div img {
     width: 90%;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .coming-soon-section {
@@ -133,4 +134,20 @@
     font-weight: 200;
     line-height: 27px;
     color: #333333;
+}
+
+/* Mobile Responsiveness */
+@media (min-width: 800px) {
+    .client-galleries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+    }
+    .client-galleries div p {
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
 }
