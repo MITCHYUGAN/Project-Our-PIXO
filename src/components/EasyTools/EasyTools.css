@@ -41,10 +41,10 @@
         .tool {
             width: 49%;
             display: flex;
-            gap: 10px;
+            gap: 20px;
 
             img {
-                width: 120px;
+                width: 70px;
             }
 
             div {
