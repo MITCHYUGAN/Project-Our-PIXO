@@ -18,6 +18,7 @@ const Features = () => {
             <h1 className="giveBusinessProfTouchH1">Give your business a professional touch</h1>
             <div className="giveBusinessProfTouchContents">
                 <div className="profTouch">
+                    
                     <h3>Gallery Creation and Customization</h3>
                     <p>Create unique and beautiful cover photos and galleries for your client. You are given full customization rights to be as creative as you wish.</p>
                     <img src={featureBanner1} alt="Gallery Creation and Customization Image" />
