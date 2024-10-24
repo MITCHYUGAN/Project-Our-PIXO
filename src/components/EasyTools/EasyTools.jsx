@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
-import { EasyToolsData } from "./EasyToolsData.js"
 import arrow1 from './assets/arrow1.svg'
 import arrow2 from './assets/arrow2.svg'
 import "./EasyTools.css"
 
-const EasyTools = () => {
+// eslint-disable-next-line react/prop-types
+const EasyTools = ({easytoolsdata}) => {
     return (
         <section className="easytools">
             <img className="arrow1" src={arrow1} alt="" />
             <h1>Easy to use tools</h1>
             <div className="easytoolswrapper">
-                {
-                    EasyToolsData.map(({ key, h3, img, p }) => {
+                {   
+                    // eslint-disable-next-line react/prop-types
+                    easytoolsdata.map(({ key, h3, img, p }) => {
                         return (
                             <div className="tool" key={key}>
                                 <div>
@@ -27,7 +28,7 @@ const EasyTools = () => {
                 }
             </div>
             <Link to="/features">
-                <button>See all features</button>
+                <button type='button'>See all features</button>
             </Link>
             <img className="arrow2" src={arrow2} alt="" />
         </section>
