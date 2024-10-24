@@ -9,24 +9,29 @@ const Header = () => {
 
   const [activeNav, setActiveNav] = useState("")
   const [menuBar, setMenuBar] = useState(menubar)
+  const [navButtonAriaText, setNavButtonAriaText] = useState("Nav List Open")
 
   function openNav() {
     if (activeNav === "") {
       setActiveNav("active")
       setMenuBar(menubarcancel)
+      setNavButtonAriaText("Nav List Close")
     } else {
       setActiveNav("")
       setMenuBar(menubar)
+      setNavButtonAriaText("Nav List Open")
     }
   }
 
   return (
-    <section className="header">
+    <nav id='label' aria-label='Main Navigation' className="header">
       <div className='headerWrapper'>
         <Link to="/" >
           <img src={logo} className="logo" alt="" />
         </Link>
-        <img src={menuBar} className='menu' alt="" onClick={openNav} />
+        <button className='menu' type='button' aria-label={navButtonAriaText} onClick={openNav}>
+          <img src={menuBar} alt="" />
+        </button>
         <ul className={`navbar ${activeNav}`}>
           <li>
             Pricing
@@ -37,10 +42,10 @@ const Header = () => {
           <li>
             Login
           </li>
-          <button>Try 1 month free</button>
+          <button type='button' id='try-free-btn' aria-labelledby='label try-free-btn' >Try 1 month free</button>
         </ul>
       </div>
-    </section>
+    </nav>
   );
 }
 

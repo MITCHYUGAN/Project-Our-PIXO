@@ -6,6 +6,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer'
 import Features from './Pages/Features/Features';
+import HowItWorks from './Pages/HowItWorks/HowItWorks';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="showcase" element={<MainComponent />} />
-          <Route path='features' element={<Features/>} />
+          <Route path="features" element={<Features/>} />
+          <Route path="howitworks" element={<HowItWorks/>} />
         </Routes>
       </Router>
       <Footer />

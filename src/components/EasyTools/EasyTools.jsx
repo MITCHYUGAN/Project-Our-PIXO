@@ -4,13 +4,14 @@ import arrow2 from './assets/arrow2.svg'
 import "./EasyTools.css"
 
 // eslint-disable-next-line react/prop-types
-const EasyTools = ({easytoolsdata}) => {
+const EasyTools = ({ easytoolsdata, displayBtn }) => {
+
     return (
         <section className="easytools">
             <img className="arrow1" src={arrow1} alt="" />
             <h1>Easy to use tools</h1>
             <div className="easytoolswrapper">
-                {   
+                {
                     // eslint-disable-next-line react/prop-types
                     easytoolsdata.map(({ key, h3, img, p }) => {
                         return (
@@ -27,9 +28,12 @@ const EasyTools = ({easytoolsdata}) => {
                     })
                 }
             </div>
-            <Link to="/features">
-                <button type='button'>See all features</button>
-            </Link>
+            {
+                displayBtn &&
+                <Link to="/features">
+                    <button type='button'>See all features</button>
+                </Link>
+            }
             <img className="arrow2" src={arrow2} alt="" />
         </section>
     )
