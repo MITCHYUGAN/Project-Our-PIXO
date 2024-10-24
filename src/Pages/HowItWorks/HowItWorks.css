@@ -1,0 +1,143 @@
+.howitworks{
+    margin-top: 100px;
+    
+    .howitworksHero{
+        width: 100%;
+        min-height: 40vh;
+        background-color: #B4ECCD;
+        border-bottom-right-radius: 40%;
+        display: grid;
+        place-items: center;
+
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-size: clamp(40px, 3.2vw, 6vw);
+            text-align: center;
+        }
+    }
+
+    .startCreating{
+        margin: 100px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+        font-family: "Raleway", sans-serif;
+        
+        h1{
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            width: min(900px, 90%);
+            font-size: clamp(30px, 2.2vw, 3vw);
+        }
+        
+        .steps{
+            display: flex;
+            color: #333333;
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 90%;
+            row-gap: 30px;
+            
+            .step{
+                width: 49%;
+                display: flex;
+                gap: 20px;
+                /* align-items: center; */
+                position: relative;
+                
+                h2{
+                    font-size: var(--HeadingFS);
+                    color: #EE2145;
+                }
+
+                .vector{
+                    position: absolute;
+                    bottom: 0;
+                    display: none;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3{
+                        font-size: clamp(25px, 1.7vw, 2vw);
+                    }
+
+                    p{
+                        font-size: clamp(20px, 1.5vw, 1.8vw);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .helpToGetStarted{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        h1{
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: var(--HeadingFS);
+        }
+
+        p{
+            font-size: clamp(20px, 1.5vw, 2vw);
+            font-family: "Raleway", sans-serif;
+            width: 80%;
+            text-align: center;
+            color: #333333;
+
+            span{
+                color: #BC203B;
+            }
+        }
+
+        img{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1126.100px) {
+    .howitworks{
+        .startCreating{
+            .steps{
+                gap: 10px;
+
+                .step{
+                    width: 100%;
+                    min-height: 110px;
+
+                    .vector{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .howitworks{
+        .startCreating{
+            .steps{
+                gap: 10px;
+
+                .step{
+                    min-height: 140px;
+
+                    .vector{
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
