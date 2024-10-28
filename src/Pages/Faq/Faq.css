@@ -1,4 +1,8 @@
 .faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   text-align: center;
   padding: 15% 5%;
   font-family: 'Mazzard', sans-serif;
@@ -12,12 +16,12 @@
 .faq-container {
   text-align: left;
   margin-top: 20px;
+  width: 100%;
 }
 
 hr{
     background-color: #ed1d61;
     border-width: 0;
-    /*change your size in this place*/
     padding-top: 1px;
     margin-bottom: 10px;
 }
@@ -25,36 +29,36 @@ hr{
 .faq-card {
   margin-bottom: 15px;
   padding: 15px;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
   cursor: pointer;
-  /* background-color: #f9f9f9; */
-  /* transition: background-color 0.3s ease; */
 }
 
 .faq-card a {
-    /* text-decoration: none; */
     color: black;
 }
 
-/* .faq-card.active {
-  background-color: #eaeaea;
-} */
-
 .faq-question {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
+  gap: 20px;
+  text-align: left;
+  width: 100%;
 }
 
 .faq-question h2 {
   font-size: 20px;
   margin: 0;
+  word-wrap: break-word;
+  line-break: auto;
 }
 
-.faq-icon {
-  font-size: 24px;
-  font-weight: bold;
+.faq-card p {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.faq-question img{
+  width: 30px;
 }
 
 .faq-answer {
@@ -62,4 +66,20 @@ hr{
   text-align: left;
   font-size: 16px;
   color: #555;
+}
+
+
+/* Desktop View */
+@media (min-width: 800px) {
+  .faq-section {
+    padding: 5%;
+    gap: 50px;
+  }
+  .faq-question h2 {
+    font-size: 22px;
+  }
+  .faq-card p {
+  font-size: 19px;
+  line-height: 25px;
+}
 }
