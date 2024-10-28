@@ -13,7 +13,7 @@ const EasyTools = ({ easytoolsdata, displayBtn }) => {
             <div className="easytoolswrapper">
                 {
                     // eslint-disable-next-line react/prop-types
-                    easytoolsdata.map(({ key, h3, img, p }) => {
+                    Array.isArray(easytoolsdata) && easytoolsdata.map(({ key, h3, img, p }) => {
                         return (
                             <div className="tool" key={key}>
                                 <div>
