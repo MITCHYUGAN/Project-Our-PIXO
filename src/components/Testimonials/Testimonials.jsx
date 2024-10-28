@@ -6,6 +6,15 @@ import styledArrow2 from "./assets/styledArrow2.svg"
 import "./Testimonials.css"
 
 const Testimonials = () => {
+
+  function prevBtn(){
+    console.log("Prev");
+  }
+
+  function nextBtn(){
+    console.log("Next");
+  }
+
   return (
     <section className="testimonial">
       <img src={styledArrow1} className="styledArrow1" alt="" />
@@ -28,10 +37,14 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className="testimonialControls">
-        <div className="slidesArrow">
-          <img src={arrowLeft} alt="" />
-          <img src={arrowRight} alt="" />
+      <div className="testimonialControls" aria-label="Testimonial Controls">
+        <div className="slidesArrow" aria-label="Testimonial Controls Arrows">
+          <button onClick={prevBtn}>
+            <img src={arrowLeft} alt="" aria-hidden="true" />
+          </button>
+          <button onClick={nextBtn}>
+            <img src={arrowRight} alt="" aria-hidden="true" />
+          </button>
         </div>
         <div className="slidesCircles">
           <span></span>
@@ -42,7 +55,7 @@ const Testimonials = () => {
           <span></span>
         </div>
       </div>
-      <img src={styledArrow2} className="styledArrow2"  alt="" />
+      <img src={styledArrow2} className="styledArrow2" alt="" />
     </section>
   )
 }

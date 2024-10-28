@@ -96,8 +96,9 @@
             display: flex;
             gap: 20px;
 
-            img{
-                width: 40px;
+            button{
+                background: none;
+                border: none;
                 cursor: pointer;
             }
         }
