@@ -49,9 +49,16 @@
                     font-size: var(--Heading4FS);
                     padding-bottom: 20px;
                 }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
 
-                p {
+            ul li a {
                     text-align: left;
+                    text-decoration: none;
+                    color: black;
                     font-size: var(--ParagraphFS);
                 }
             }
