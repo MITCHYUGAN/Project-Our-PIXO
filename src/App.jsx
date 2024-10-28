@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer'
 import Features from './Pages/Features/Features';
 import FAQ from './Pages/Faq/Faq';
+import HowItWorks from './Pages/HowItWorks/HowItWorks';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
           <Route path="showcase" element={<MainComponent />} />
           <Route path='features' element={<Features/>} />
           <Route path='faq' element={<FAQ/>} />
+          <Route path="features" element={<Features/>} />
+          <Route path="howitworks" element={<HowItWorks/>} />
         </Routes>
       <Footer />
       </Router>
