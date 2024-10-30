@@ -16,9 +16,9 @@ const WhyOurPIXO = () => {
       </div>
       <div className='whyourpixocontents'>
         {
-          whyOurPIXO.map(({ heading, img, paragraph }) => {
+          whyOurPIXO.map(({ id, heading, img, paragraph }) => {
             return (
-              <div key={1} className='standouts'>
+              <div key={id} className='standouts'>
                 <div>
                   <img src={img} alt="" />
                 </div>

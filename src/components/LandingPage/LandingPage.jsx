@@ -5,6 +5,7 @@ import WhyOurPIXO from '../WhyOurPIXO/WhyOurPIXO'
 import GetStarted from '../GetStarted/GetStarted'
 import GetPaidInCurrencies from '../GetPaidInCurrencies/GetPaidInCurrencies'
 import EasyTools from '../EasyTools/EasyTools'
+import { EasyToolsData } from "../EasyTools/EasyToolsData"
 import Testimonials from '../Testimonials/Testimonials'
 import GetStartedForFree from '../GetStartedForFree/GetStartedForFree'
 
@@ -31,7 +32,7 @@ const LandingPage = () => {
       <WhyOurPIXO />
       <GetStarted />
       <GetPaidInCurrencies />
-      <EasyTools />
+      <EasyTools easytoolsdata={EasyToolsData} displayBtn="true" />
       <Testimonials />
       <GetStartedForFree />
     </>
