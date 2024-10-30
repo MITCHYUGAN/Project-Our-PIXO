@@ -38,25 +38,45 @@ const Header = () => {
   }
 
   return (
-    <nav id='label' aria-label='Main Navigation' className="header" style={{backgroundColor: getBackgroundColor()}}>
-      <div className='headerWrapper'>
-        <Link to="/" >
+    <nav
+      id="label"
+      aria-label="Main Navigation"
+      className="header"
+      style={{ backgroundColor: getBackgroundColor() }}
+    >
+      <div className="headerWrapper">
+        <Link to="/">
           <img src={logo} className="logo" alt="" />
         </Link>
-        <button className='menu' type='button' aria-label={navButtonAriaText} onClick={openNav}>
+        <button
+          className="menu"
+          type="button"
+          aria-label={navButtonAriaText}
+          onClick={openNav}
+        >
           <img src={menuBar} alt="" />
         </button>
         <ul className={`navbar ${activeNav}`}>
+          <li><Link to="https://pricing.pixomaticc.com/" target="_blank">Pricing</Link></li>
           <li>
-            Pricing
+            <Link to="/showcase" onClick={openNav}>
+              Client Galleries
+            </Link>
           </li>
           <li>
-            <Link to="/showcase" onClick={openNav}>Client Galleries</Link>
+            <Link to="https://app.pixomaticc.com/auth/signin" target="_blank">
+              Login
+            </Link>
           </li>
-          <li>
-            Login
-          </li>
-          <button type='button' id='try-free-btn' aria-labelledby='label try-free-btn' >Try 1 month free</button>
+          <Link to="https://pricing.pixomaticc.com/" target="_blank">
+            <button
+              type="button"
+              id="try-free-btn"
+              aria-labelledby="label try-free-btn"
+            >
+              Try 1 month free
+            </button>
+          </Link>
         </ul>
       </div>
     </nav>
