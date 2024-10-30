@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Faq.css";
 import { faqQuestions } from "./data"; // Import the FAQ data
 import plusIcon from "./assets/plusIcon.svg"
+import GetStartedForFree from "../../components/GetStartedForFree/GetStartedForFree";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null); // Track which item is open
@@ -48,6 +49,7 @@ function FAQ() {
           </>
         ))}
       </div>
+      <GetStartedForFree />
     </div>
   );
 }
