@@ -8,12 +8,14 @@ import Footer from './components/Footer/Footer'
 import Features from './Pages/Features/Features';
 import FAQ from './Pages/Faq/Faq';
 import HowItWorks from './Pages/HowItWorks/HowItWorks';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
 
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />

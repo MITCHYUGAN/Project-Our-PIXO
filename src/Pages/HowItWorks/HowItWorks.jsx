@@ -80,9 +80,11 @@ const HowItWorks = () => {
             professionally to your clients.
           </p>
           {/* <img src={helptogetstartedImg} alt="" /> */}
+          <div className="iframe-container">
           <iframe
-            width="800"
-            height="420"
+          className="iframe-player"
+            // width="800"
+            // height="420"
             src="https://www.youtube.com/embed/GHXt6cQ7nt8?si=CX2dy65rFjLfipDD"
             title="YouTube video player"
             frameborder="0"
@@ -90,6 +92,7 @@ const HowItWorks = () => {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+          </div>
         </section>
         <EasyTools easytoolsdata={FeaturesData} />
         <GetStartedForFree />
