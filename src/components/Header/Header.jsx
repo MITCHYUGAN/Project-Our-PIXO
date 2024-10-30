@@ -4,12 +4,26 @@ import menubar from './assets/menu-bar.svg'
 import menubarcancel from './assets/menubar-cancel.svg'
 import './Header.css'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
 
   const [activeNav, setActiveNav] = useState("")
   const [menuBar, setMenuBar] = useState(menubar)
   const [navButtonAriaText, setNavButtonAriaText] = useState("Nav List Open")
+
+  const locaton = useLocation()
+
+  // Dynamic header background
+  const getBackgroundColor = () => {
+    if(location.pathname === "/") {
+      return "#fff"
+    } else if(location.pathname === "/howitworks") {
+      return "#B4ECCD";
+    } else if(location.pathname === "/features") {
+      return "#FFECBA";
+    }
+  }
 
   function openNav() {
     if (activeNav === "") {
@@ -24,7 +38,7 @@ const Header = () => {
   }
 
   return (
-    <nav id='label' aria-label='Main Navigation' className="header">
+    <nav id='label' aria-label='Main Navigation' className="header" style={{backgroundColor: getBackgroundColor()}}>
       <div className='headerWrapper'>
         <Link to="/" >
           <img src={logo} className="logo" alt="" />

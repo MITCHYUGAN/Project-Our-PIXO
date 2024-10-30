@@ -6,7 +6,7 @@ function GalleryBanner() {
       </div>
         <div className='banner-text'>
       <h1>
-        Hop into our World of <br /><span>Creativity</span>
+        Hop into our World of <span>Creativity</span>
       </h1>
       <p>
         OurPixo is used by creatives to create beautiful galleries and cover
