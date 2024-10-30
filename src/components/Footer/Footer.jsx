@@ -14,13 +14,16 @@ const Footer = () => {
         <div className="footerheading">
           <img src={logo} alt="" />
           <div>
-            <Link to="/">
+            <a href="mailto:support@ourpixo.com">
               <img src={emailIcon} alt="" />
-            </Link>
+            </a>
             <Link to="/">
               <img src={whatsappIcon} alt="" />
             </Link>
-            <Link to="https://www.linkedin.com/company/99833453/admin/dashboard/">
+            <Link
+              to="https://www.linkedin.com/company/99833453/admin/dashboard/"
+              target="_blank"
+            >
               <img src={linkedInIcon} alt="" />
             </Link>
             <Link to="https://www.instagram.com/ourpixo/" target="_blank">
@@ -70,7 +73,9 @@ const Footer = () => {
               <h3>Company</h3>
               <ul>
                 <li>
-                  <Link to="/">Privacy Policy</Link>
+                  <Link to="https://ourpixo.com/policy/" target="_blank">
+                    Privacy Policy
+                  </Link>
                 </li>
               </ul>
             </div>

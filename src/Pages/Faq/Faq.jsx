@@ -12,6 +12,7 @@ function FAQ() {
   };
 
   return (
+    <>
     <div className="faq-section">
       <h1>Frequently Asked Questions</h1>
       <div className="faq-container">
@@ -49,8 +50,9 @@ function FAQ() {
           </>
         ))}
       </div>
-      <GetStartedForFree />
     </div>
+      <GetStartedForFree />
+    </>
   );
 }
 
