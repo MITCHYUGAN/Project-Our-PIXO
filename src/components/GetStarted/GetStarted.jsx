@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { getStarted } from "./GetStartedData"
 import './GetStarted.css'
 
@@ -18,7 +19,7 @@ const GetStarted = () => {
                     })
                 }
             </div>
-            <button>Find out More</button>
+            <Link className='button' to="/howitworks">Find out More</Link>
         </section>
     )
 }
