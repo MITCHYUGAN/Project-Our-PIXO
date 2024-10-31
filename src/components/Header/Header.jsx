@@ -57,7 +57,7 @@ const Header = () => {
           <img src={menuBar} alt="" />
         </button>
         <ul className={`navbar ${activeNav}`}>
-          <li><Link to="https://pricing.pixomaticc.com/" target="_blank">Pricing</Link></li>
+        <li><Link to="https://pricing.pixomaticc.com/" target="_blank">Pricing</Link></li>
           <li>
             <Link to="/showcase" onClick={openNav}>
               Client Galleries

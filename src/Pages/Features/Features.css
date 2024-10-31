@@ -36,7 +36,8 @@
             width: 90%;
             gap: 25px;
             row-gap: 100px;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
 
             .profTouch{
@@ -60,6 +61,14 @@
                 img {
                     width: min(70%, 100%);
                     width: 100%;
+                }
+            }
+            .profTouch-title-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 20px;
                 }
             }
         }
