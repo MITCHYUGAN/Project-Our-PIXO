@@ -6,34 +6,34 @@ import './WhyOurPIXO.css'
 
 const WhyOurPIXO = () => {
   return (
-    <section className='whyourpixo'>
-      <div className='whyourpixoheading'>
-        <div className='whyourpixoheadingcontents'>
-          <img src={icon} alt="" />
-          <h4>WHY OURPIXO</h4>
+    <section className="why-ourpixo">
+      <div className="whyourpixoheading">
+        <div className="whyourpixoheadingcontents">
+          <img src={icon} alt="" className="first" />
+          <div className="why-ourpixo-header">
+            <p>WHY OURPIXO</p>
+          </div>
         </div>
-        <h1>Specially designed for Creatives</h1>
+        <h2>Specially designed for Creatives</h2>
       </div>
-      <div className='whyourpixocontents'>
-        {
-          whyOurPIXO.map(({ id, heading, img, paragraph }) => {
-            return (
-              <div key={id} className='standouts'>
-                <div>
-                  <img src={img} alt="" />
-                </div>
-                <div>
-                  <h4>{heading}</h4>
-                  <p>{paragraph}</p>
-                </div>
+      <div className="benefits-section">
+        {whyOurPIXO.map(({ id, heading, img, paragraph }) => {
+          return (
+            // <div key={id} className="benefits-section">
+            <div key={id} className="benefits-item">
+              <img src={img} alt="" />
+              <div>
+                <h4 className="subhead">{heading}</h4>
+                <p>{paragraph}</p>
               </div>
-            )
-          })
-        }
-        <img src={icon2} className='icon2' alt="" />
+            </div>
+            // </div>
+          );
+        })}
+        <img src={icon2} className="second" alt="" />
       </div>
     </section>
-  )
+  );
 }
 
 export default WhyOurPIXO
