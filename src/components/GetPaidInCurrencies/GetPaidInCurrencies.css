@@ -1,16 +1,16 @@
 .getpaidincurrencies {
     width: 100%;
-    min-height: 30vh;
+    /* min-height: 30vh; */
     background-color: var(--main-red);
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     font-family: "Montserrat", sans-serif;
     color: white;
     margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
+    padding: 150px 20px;
     position: relative;
     z-index: 1;
 
@@ -61,13 +61,13 @@
     }
 
     p {
-        width: min(850px, 100%);
+        width: min(700px, 100%);
         text-align: center;
         opacity: 0.8;
         font-size: clamp(20px, 1.5vw, 1.8vw);
     }
 
-    span {
+    /* span {
         font-family: "Raleway", sans-serif;
         font-size: clamp(25px, 1.6vw, 2vw);
         font-weight: 900;
@@ -78,8 +78,16 @@
         border: none;
         border-radius: 5px;
         z-index: 1;
-    }
+    } */
 }
+
+.getpaidincurrencies .coming-soon {
+        background-color: rgba(255, 207, 215, 0.20);
+        width: fit-content;
+        padding: 10px 10px;
+        border-radius: 5px;
+        /* margin: 0 auto; */
+    }
 
 @media (min-width: 1800px) {
     .getpaidincurrencies{
@@ -88,5 +96,42 @@
         p{
             width: 1500px;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .getpaidincurrencies {
+        padding: 50px 20px;
+        align-items: center;
+        text-align: center;
+        background-color: #872032;
+        color: #ffffff;
+    }
+
+    .getpaidincurrencies .heading h2 {
+        font-size: 30px;
+        font-weight: 800;
+        font-family: Noto Sans, Tahoma;
+        width: 400px;
+        /* margin: 0 auto; */
+        /* margin-bottom: 30px; */
+    }
+    
+    .getpaidincurrencies p {
+        font-size: 16px;
+        line-height: 115%;
+        font-family: Raleway;
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        /* margin-bottom: 20px; */
+    }
+
+    .getpaidincurrencies .coming-soon {
+        background-color: rgba(255, 207, 215, 0.20);
+        width: fit-content;
+        padding: 10px 10px;
+        border-radius: 5px;
+        /* margin: 0 auto; */
     }
 }

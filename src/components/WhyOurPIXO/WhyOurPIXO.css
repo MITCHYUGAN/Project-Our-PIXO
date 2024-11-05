@@ -4,7 +4,7 @@
 .why-ourpixo {
     position: relative;
     /* height: auto; */
-    padding: 50px 50px;
+    padding: 150px 50px;
     color: #000000;
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@
         }
     } */
      .why-ourpixo {
-        padding: 0 20px;
+        padding: 50px 20px;
         padding-bottom: 50px;
         display: block;
      }

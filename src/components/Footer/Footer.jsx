@@ -12,7 +12,9 @@ const Footer = () => {
     <section className="footer">
       <div className="footerWrapper">
         <div className="footerheading">
+          <Link to="/">
           <img src={logo} alt="" />
+          </Link>
           <div>
             <a href="mailto:support@ourpixo.com">
               <img src={emailIcon} alt="" />
@@ -82,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="footerText">Pixomatic copyright 2024</p>
+      <p className="footerText">Pixomatic © {new Date().getFullYear()}</p>
     </section>
   );
 }
