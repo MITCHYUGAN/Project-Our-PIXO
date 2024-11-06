@@ -38,16 +38,16 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className='testimonial-controls'>
+      <div className="testimonial-controls">
         <div className="arrows">
-          <button onClick={handlePrev}>&lt;</button>
-          <button onClick={handleNext}>&gt;</button>
+          <button onClick={handlePrev}>←</button>
+          <button onClick={handleNext}>→</button>
         </div>
         <div className="dots">
           {TestimonialData.map((_, index) => (
             <span
               key={index}
-              className={`dot ${index === currentIndex ? 'active' : ''}`}
+              className={`dot ${index === currentIndex ? "active" : ""}`}
               onClick={() => setCurrentIndex(index)}
             ></span>
           ))}
@@ -55,7 +55,7 @@ const Testimonials = () => {
       </div>
       <img src={styledArrow2} className="styledArrow2" alt="" />
     </section>
-  )
+  );
 }
 
 export default Testimonials

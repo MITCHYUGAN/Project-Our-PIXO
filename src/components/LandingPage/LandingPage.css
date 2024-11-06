@@ -1,8 +1,85 @@
+.hero-page .background-shapes {
+    position: absolute;
+}
+
+.hero-page {
+    height: auto;
+    padding: 150px 0 20px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: radial-gradient(circle at 40% 0%, #872032 62%, #ffffff 62%);
+}
+
+.hero-page h4 {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Noto Sans, Tahoma;
+    margin-bottom: 20px;
+}
+
+.hero-page h1 {
+    font-weight: 700;
+    max-width: 600px;
+    font-size: 46px;
+    margin: 0 auto;
+    font-family: Noto Sans, Tahoma;
+    margin-bottom: 20px;
+    line-height: 115%;
+}
+
+.hero-page p {
+    font-weight: 300;
+    font-size: 20px;
+    font-family: Raleway;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.hero-page .button {
+    margin-bottom: 50px;
+    padding: 25px 30px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #BC203B;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero-page .button a {
+    text-decoration: none;
+}
+
+.hero-page-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    object-fit: inherit;
+    margin-bottom: 60px;
+    box-shadow: 0px 6px 4px rgba(238, 33, 71, 0.30)
+}
+
+.hero-page .hero-footer p {
+    color: black;
+    font-weight: 600;
+    font-family: Raleway;
+}
+
+.highlight {
+    color: #EE2145;
+}
+
 .landingPage {
     width: 100%;
     /* height: 195vh; */
     /* max-height: 195vh; */
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,14 +87,14 @@
     font-family: "Montserrat", sans-serif;
 
     .landingPage-wrapper{
-        background-color: blue;
+        /* background-color: blue; */
         height: 70%;
         width: 100%;
     }
 
     .landingPage-content-wrapper {
-        width: 100%;
-        /* height: 60%; */
+        /* width: 100%;
+        height: 60%;
         background-color: var(--main-red);
         border-bottom-left-radius: 10%;
         border-bottom-right-radius: 10%;
@@ -25,11 +102,20 @@
         flex-direction: column;
         align-items: center;
         gap: 60px;
-        justify-self: flex-end;
+        justify-self: flex-end; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 100px 0 20px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background: radial-gradient(circle at 35% 0%, #872032 62%, #ffffff 62%);
 
 
         .landing-contents {
-            margin-top: 200px;
+            /* margin-top: 200px; */
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -109,6 +195,84 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .landingPage-content-wrapper {
+        height: auto;
+        padding: 100px 0 20px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background: radial-gradient(circle at 35% 0%, #872032 62%, #ffffff 62%);
+    }
+    .hero-page {
+        height: auto;
+        padding: 100px 0 20px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background: radial-gradient(circle at 35% 0%, #872032 62%, #ffffff 62%);
+    }
+    .hero-page .background-shapes {
+        position: absolute;
+    }
+
+    .hero-page-img {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 90%;
+        object-fit: contain;
+        margin-bottom: 60px;
+    }
+
+    .hero-page .button {
+        margin-bottom: 60px;
+        padding: 15px 25px;
+        font-family: Noto Sans, Tahoma;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #ffffff;
+        color: #BC203B;
+        width: 150px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .hero-page .button a {
+        text-decoration: none; 
+    }
+    .hero-page h1 {
+        font-weight: 850;
+        /* width: 100vw; */
+        font-size: 32px;
+        margin: 0 auto;
+        font-family: Noto Sans, Tahoma;
+        margin-bottom: 30px;
+        line-height: 115%;
+    }
+    .hero-page h4 {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: Noto Sans, Tahoma;
+        margin-bottom: 30px;
+    }
+    .hero-page p {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Raleway;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.hero-page .hero-footer p{
+        color: #333333;
+        font-weight: 600;
+        font-family: Raleway;
     }
 }
 
