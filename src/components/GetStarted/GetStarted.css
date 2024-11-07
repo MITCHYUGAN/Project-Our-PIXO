@@ -40,9 +40,9 @@
                 }
             }
 
-            p {
+            /* p {
                 font-size: var(--ParagraphFS);
-            }
+            } */
 
             img {
                 width: min(80%, 100%);

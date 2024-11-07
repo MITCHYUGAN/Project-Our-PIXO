@@ -18,7 +18,7 @@
     font-family: Noto Sans, Tahoma;
     font-weight: 800;
     margin-bottom: 20px;
-    font-size: 16px;
+    /* font-size: 16px; */
     align-items: center;
     text-align: center;
 }
@@ -84,7 +84,7 @@
 
 .benefits-item p {
     line-height: 115%;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: #333333;
     min-width: 320px;
 }
@@ -213,7 +213,7 @@
         font-family: Noto Sans, Tahoma;
         font-weight: 700;
         margin-bottom: 20px;
-        font-size: 16px;
+        /* font-size: 16px; */
         align-items: center;
         text-align: center;
     }
