@@ -65,9 +65,9 @@
                         font-size: clamp(25px, 1.7vw, 2vw);
                     }
 
-                    p{
+                    /* p{
                         font-size: clamp(20px, 1.5vw, 1.8vw);
-                    }
+                    } */
                 }
 
             }
@@ -87,7 +87,7 @@
         }
 
         p{
-            font-size: clamp(20px, 1.5vw, 2vw);
+            /* font-size: clamp(20px, 1.5vw, 2vw); */
             font-family: "Raleway", sans-serif;
             width: 80%;
             text-align: center;

@@ -64,7 +64,7 @@
         width: min(700px, 100%);
         text-align: center;
         opacity: 0.8;
-        font-size: clamp(20px, 1.5vw, 1.8vw);
+        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
     }
 
     /* span {
@@ -118,7 +118,7 @@
     }
     
     .getpaidincurrencies p {
-        font-size: 16px;
+        /* font-size: 16px; */
         line-height: 115%;
         font-family: Raleway;
         width: 400px;

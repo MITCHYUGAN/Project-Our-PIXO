@@ -56,9 +56,9 @@
                 width: 70px;
             }
 
-            p {
+            /* p {
                 font-size: calc(var(--ParagraphFS) + 1px);
-            }
+            } */
 
             .slidesContents {
                 align-self: center;
@@ -75,9 +75,9 @@
                         font-size: var(--Heading4FS);
                     }
 
-                    p {
+                    /* p {
                         font-size: var(--ParagraphFS);
-                    }
+                    } */
                 }
             }
         }

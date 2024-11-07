@@ -53,7 +53,7 @@ hr{
 }
 
 .faq-card p {
-  font-size: 17px;
+  /* font-size: 17px; */
   line-height: 23px;
 }
 
@@ -79,7 +79,7 @@ hr{
     font-size: 22px;
   }
   .faq-card p {
-  font-size: 19px;
+  /* font-size: 19px; */
   line-height: 25px;
 }
 }

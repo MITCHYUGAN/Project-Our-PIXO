@@ -57,9 +57,9 @@
                     font-size: var(--Heading4FS);
                 }
 
-                p {
+                /* p {
                     font-size: var(--ParagraphFS);
-                }
+                } */
             }
         }
     }
