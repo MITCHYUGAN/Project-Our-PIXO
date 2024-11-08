@@ -30,10 +30,14 @@
     }
 
     .easytoolswrapper {
-        display: flex;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        /* align-items: center; */
         width: 90%;
-        flex-wrap: wrap;
-        gap: 200px;
+        /* flex-wrap: wrap; */
+        gap: 30px;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -41,9 +45,11 @@
         row-gap: 60px;
 
         .tool {
-            width: 40%;
+            /* width: 40%; */
             display: flex;
-            gap: 30px;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
 
             img {
                 width: 60px;
@@ -85,10 +91,18 @@
 @media (max-width: 1127px) {
     .easytools {
         .easytoolswrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
             .tool {
                 width: 80%;
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .easytoolswrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -101,8 +115,18 @@
         }
 
         .easytoolswrapper {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
             .tool {
+                flex-direction: row;
                 width: 100%;
+
+                div h3 {
+                    font-size: 20px;
+                }
+                div p {
+                    font-size: 18px;
+                }
 
                 img{
                     width: 60px;

@@ -48,20 +48,20 @@ export const professionalTouchData = [
     title: "Gallery Creation and Customization",
     description:
       "Create unique and beautiful cover photos and galleries for your client. You are given full customization rights to be as creative as you wish.",
-    imageUrl: "src/Pages/Features/assets/featureBanner1.svg",
+    imageUrl: require("./assets/featureBanner1.svg"),
   },
   {
     id: 2,
     title: "Creation of Sets",
     description:
       "Gather all the memories of weddings, events and parties into one file, with different folders. Create a set and arrange all parts of the event accordingly, making it easier to access files.",
-    imageUrl: "src/Pages/Features/assets/featureBanner2.svg",
+    imageUrl: require("./assets/featureBanner2.svg"),
   },
   {
     id: 3,
     title: "Business Tracking",
     description:
       "Track projects, manage bookings, see payments, and get updates on how your business is doing. It makes your work easier, saves time, and helps you stay organized.",
-    imageUrl: "src/Pages/Features/assets/featureBanner3.svg",
+    imageUrl: require("./assets/featureBanner3.svg"),
   },
 ];

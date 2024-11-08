@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.select-option-wrapper select {
+.select-option-wrapper .dropdown-button {
   appearance: none;
   text-align: center;
   background: none;
@@ -133,6 +133,46 @@
     line-height: 27px;
     color: #333333;
 }
+
+/* ChatGPT code cos it's not me that'll run mad today */
+.select-option-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-arrow-icon {
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
 
 /* Mobile Responsiveness */
 @media (min-width: 800px) {

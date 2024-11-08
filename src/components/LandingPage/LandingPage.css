@@ -226,18 +226,18 @@
         justify-items: center;
         width: 90%;
         object-fit: contain;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 
     .hero-page .button {
         margin-bottom: 60px;
         padding: 15px 25px;
         font-family: Noto Sans, Tahoma;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
         background-color: #ffffff;
         color: #BC203B;
-        width: 150px;
+        /* width: 150px; */
         border-radius: 10px;
         border: none;
         outline: none;
@@ -249,7 +249,7 @@
     }
     .hero-page h1 {
         font-weight: 850;
-        /* width: 100vw; */
+        width: 400px;
         font-size: 32px;
         margin: 0 auto;
         font-family: Noto Sans, Tahoma;
@@ -264,13 +264,13 @@
     }
     .hero-page p {
     font-weight: 300;
-    /* font-size: 16px; */
+    font-size: 18px;
     font-family: Raleway;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
-}
-.hero-page .hero-footer p{
+    }
+    .hero-page .hero-footer p{
         color: #333333;
         font-weight: 600;
         font-family: Raleway;
