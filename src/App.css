@@ -18,13 +18,13 @@
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
 }
 
 @media (max-width: 600px) {
     p {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 25px;
     }
 }

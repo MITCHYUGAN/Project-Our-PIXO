@@ -6,12 +6,13 @@
     position: relative;
     align-items: center;
     gap: 100px;
-    padding: 100px 0;
+    padding: 150px 0;
+    margin-top: 50px;
 
     .arrow1 {
         position: absolute;
         width: 100px;
-        top: 30px;
+        top: 100px;
         right: 0;
     }
 
@@ -29,37 +30,47 @@
     }
 
     .easytoolswrapper {
-        display: flex;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        /* align-items: center; */
         width: 90%;
-        flex-wrap: wrap;
-        gap: 20px;
+        /* flex-wrap: wrap; */
+        gap: 30px;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
         font-family: "Raleway", sans-serif;
-        row-gap: 50px;
+        row-gap: 60px;
 
         .tool {
-            width: 49%;
+            /* width: 40%; */
             display: flex;
+            flex-direction: column;
+            align-items: start;
             gap: 20px;
 
             img {
-                width: 70px;
+                width: 60px;
+                height: auto;
             }
 
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
 
 
                 h3 {
-                    font-size: var(--Heading4FS);
+                    /* font-size: var(--Heading4FS); */
+                    font-size: 24px;
                 }
 
-                /* p {
-                    font-size: var(--ParagraphFS);
-                } */
+                p {
+                    /* font-size: var(--ParagraphFS); */
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -80,10 +91,18 @@
 @media (max-width: 1127px) {
     .easytools {
         .easytoolswrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
             .tool {
                 width: 80%;
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .easytoolswrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -96,8 +115,18 @@
         }
 
         .easytoolswrapper {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
             .tool {
+                flex-direction: row;
                 width: 100%;
+
+                div h3 {
+                    font-size: 20px;
+                }
+                div p {
+                    font-size: 18px;
+                }
 
                 img{
                     width: 60px;
