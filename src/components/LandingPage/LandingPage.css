@@ -1,6 +1,6 @@
-.hero-page .background-shapes {
+/* .hero-page .background-shapes {
     position: absolute;
-}
+} */
 
 .hero-page {
     height: auto;
@@ -9,6 +9,7 @@
     text-align: center;
     color: #ffffff;
     background: radial-gradient(circle at 40% 0%, #872032 62%, #ffffff 62%);
+    overflow: hidden;
 }
 
 .hero-page h4 {
