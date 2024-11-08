@@ -58,6 +58,7 @@
 
     p {
         /* font-size: clamp(20px, 1.5vw, 1.8vw); */
+        font-size: 22px;
         width: min(750px, 90%);
         line-height: 140%;
         text-align: center;
@@ -73,13 +74,15 @@
 
         button {
             font-family: "Raleway", sans-serif;
-            font-size: var(--buttonFS);
+            /* font-size: var(--buttonFS); */
+            font-size: 18px;
             padding: 19px 30px;
             cursor: pointer;
             color: white;
             background-color: var(--main-red);
             border: none;
-            border-radius: var(--border-radius);
+            /* border-radius: var(--border-radius); */
+            border-radius: 5px;
             font-weight: 700;
         }
 
@@ -119,7 +122,7 @@
             gap: 10px;
 
             button {
-                padding: 15px 25px;
+            padding: 15px 25px;
             /* margin: 0 auto; */
             font-family: Noto Sans, Tahoma;
             font-size: 12px;
@@ -127,7 +130,7 @@
             color: #ffffff;
             background-color: #872032;
             width: 150px;
-            border-radius: 10px;
+            border-radius: 5px;
             border: none;
             outline: none;
             display: block;

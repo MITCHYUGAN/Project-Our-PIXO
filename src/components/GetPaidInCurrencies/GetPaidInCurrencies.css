@@ -14,56 +14,67 @@
     position: relative;
     z-index: 1;
 
-    .circle1, .circle2, .circle3, .triangle1, .triangle2, .triangle3{
+    .circle1, .circle2, .circle3, .circle4, .triangle1, .triangle2, .triangle3{
         position: absolute;
-        width: 80px;
+        /* width: 40px; */
         z-index: -1;
         opacity: 0.7;
     }
 
     .circle1{
-        top: 30%;
-        left: 10px;
+        width: 30px;
+        top: 24%;
+        left: 30px;
     }
 
     .triangle1{
-        top: 20px;
-        left: 40%;
+        width: 41px;
+        top: 25px;
+        left: 26%;
     }    
 
     .circle2{
-        width: 30px;
-        right: 10%;
-        top: 20px;
+        width: 38px;
+        right: 12%;
+        top: 38px;
     }
 
     .circle3{
-        width: 40px;
-        bottom: 10%;
-        left: 10px;
+        width: 50px;
+        bottom: 22%;
+        left: 0;
+    }
+
+    .circle4{
+        width: 32px;
+        bottom: 30%;
+        right: 35%;
     }
 
     .triangle2{
-        width: 20px;
-        bottom: 30%;
-        right: 40%;
+        width: 30px;
+        bottom: 19%;
+        right: 45%;
     }
 
     .triangle3{
+        width: 30px;
         right: 10px;
-        bottom: 50%;
+        bottom: 60%;
     }
 
     h1 {
         font-size: clamp(30px, 3vw, 4.5vw);
         width: min(1500px, 90%);
         text-align: center;
+        font-size: 40px;
     }
 
     p {
         width: min(700px, 100%);
         text-align: center;
         opacity: 0.8;
+        font-size: 20px;
         /* font-size: clamp(20px, 1.5vw, 1.8vw); */
     }
 
@@ -82,11 +93,14 @@
 }
 
 .getpaidincurrencies .coming-soon {
-        background-color: rgba(255, 207, 215, 0.20);
+        background-color: rgba(255, 207, 215, 0.25);
         width: fit-content;
         padding: 10px 10px;
         border-radius: 5px;
         /* margin: 0 auto; */
+    }
+    .getpaidincurrencies .coming-soon h2{
+        font-size: 32px;
     }
 
 @media (min-width: 1800px) {
@@ -102,26 +116,75 @@
 @media (max-width: 600px) {
     .getpaidincurrencies {
         padding: 50px 20px;
+        height: auto;
         align-items: center;
         text-align: center;
         background-color: #872032;
         color: #ffffff;
     }
 
-    .getpaidincurrencies .heading h2 {
+    .circle1, .circle2, .circle3, .circle4, .triangle1, .triangle2, .triangle3{
+        position: absolute;
+        /* width: 40px; */
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    .getpaidincurrencies .circle1{
+        width: 10px;
+        top: 24%;
+        left: 30px;
+    }
+
+    .getpaidincurrencies .triangle1{
+        width: 21px;
+        top: 25px;
+        left: 26%;
+    }    
+
+    .getpaidincurrencies .circle2{
+        width: 18px;
+        right: 12%;
+        top: 38px;
+    }
+
+    .getpaidincurrencies .circle3{
+        width: 30px;
+        bottom: 22%;
+        left: 0;
+    }
+    .getpaidincurrencies .circle4{
+        width: 12px;
+        bottom: 30%;
+        right: 35%;
+    }
+
+    .getpaidincurrencies .triangle2{
+        width: 10px;
+        bottom: 19%;
+        right: 45%;
+    }
+
+    .getpaidincurrencies .triangle3{
+        width: 10px;
+        right: 10px;
+        bottom: 60%;
+    }
+
+    .getpaidincurrencies .heading h1 {
         font-size: 30px;
         font-weight: 800;
         font-family: Noto Sans, Tahoma;
         width: 400px;
-        /* margin: 0 auto; */
+        margin: 0 auto;
         /* margin-bottom: 30px; */
     }
     
     .getpaidincurrencies p {
-        /* font-size: 16px; */
+        font-size: 16px;
         line-height: 115%;
         font-family: Raleway;
-        width: 400px;
+        width: 350px;
         height: auto;
         margin: 0 auto;
         /* margin-bottom: 20px; */
@@ -132,6 +195,9 @@
         width: fit-content;
         padding: 10px 10px;
         border-radius: 5px;
-        /* margin: 0 auto; */
+        margin: 0 auto;
+    }
+    .getpaidincurrencies .coming-soon h2{
+        font-size: 30px;
     }
 }

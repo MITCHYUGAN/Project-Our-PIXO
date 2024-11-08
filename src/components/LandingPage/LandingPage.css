@@ -13,7 +13,7 @@
 
 .hero-page h4 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Noto Sans, Tahoma;
     margin-bottom: 20px;
 }
@@ -30,9 +30,9 @@
 
 .hero-page p {
     font-weight: 300;
-    /* font-size: 20px; */
+    font-size: 22px;
     font-family: Raleway;
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -69,6 +69,7 @@
     color: black;
     font-weight: 600;
     font-family: Raleway;
+    font-size: 22px;
 }
 
 .highlight {

@@ -8,7 +8,8 @@
     margin-top: 100px;
 
     .getStartedheadingtext {
-        font-size: var(--HeadingFS);
+        /* font-size: var(--HeadingFS); */
+        font-size: 36px;
         font-weight: 700;
         font-family: "Montserrat", sans-serif;
         text-align: center;
@@ -33,16 +34,18 @@
             gap: 30px;
 
             h1 {
-                font-size: var(--HeadingFS);
+                /* font-size: var(--HeadingFS); */
+                font-size: 30px;
 
                 span {
                     color: #EE2145;
                 }
             }
 
-            /* p {
-                font-size: var(--ParagraphFS);
-            } */
+            p {
+                /* font-size: var(--ParagraphFS); */
+                font-size: 22px;
+            }
 
             img {
                 width: min(80%, 100%);
