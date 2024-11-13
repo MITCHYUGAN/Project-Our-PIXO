@@ -1,7 +1,6 @@
 .showcase-wrapper {
     text-align: center;
     width: 100%;
-    font-family: sans-serif;
 }
 .showcase-sections {
     display: flex;
@@ -69,17 +68,17 @@
     z-index: 1;
 }
 .gallery-banner .banner-text h1 {
-    font-size: 40px;
+    font-size: var(--HeadingFS);
     font-weight: 800;
     line-height: 45px;
 }
 .gallery-banner h1 span {
-    font-size: 40px;
+    font-size: var(--HeadingFS);
     color: #BC203B;
 }
 .gallery-banner .banner-text p {
-    font-weight: 300;
-    font-size: 23px;
+    font-weight: 500;
+    font-size: var(--ParagraphFS);
     line-height: 30px;
     /* color: #333333; */
     color: rgb(43, 40, 40);
@@ -102,7 +101,7 @@
 }
 .client-galleries div p {
     text-transform: uppercase;
-    /* font-size: 20px; */
+    font-size: var(--Heading4FS);
 }
 .client-galleries div a {
     width: 100%;
@@ -123,13 +122,12 @@
     padding: 0 5%;
 }
 .coming-soon-section h2 {
-    font-size: 45px;
+    font-size: var(--Heading2FS);
     border-bottom: 2px solid #872032;
     padding-bottom: 17px;
 }
 .coming-soon-section p {
-    /* font-size: 20px; */
-    font-weight: 200;
+    font-size: var(--ParagraphFS);
     line-height: 27px;
     color: #333333;
 }

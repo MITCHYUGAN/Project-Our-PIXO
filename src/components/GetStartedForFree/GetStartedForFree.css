@@ -46,10 +46,9 @@
 
 
     h1 {
-        font-size: clamp(30px, 3vw, 4.5vw);
+        font-size: var(--Heading2FS);
         color: black;
         text-align: center;
-        font-family: "Montserrat", sans-serif;
 
         span {
             color: var(--main-red);
@@ -57,12 +56,9 @@
     }
 
     p {
-        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
-        font-size: 22px;
+        font-size: var(--ParagraphFS);
         width: min(750px, 90%);
-        line-height: 140%;
         text-align: center;
-        font-family: "Raleway", sans-serif;
     }
 
 
@@ -73,17 +69,14 @@
         gap: 15px;
 
         button {
-            font-family: "Raleway", sans-serif;
-            /* font-size: var(--buttonFS); */
-            font-size: 18px;
-            padding: 19px 30px;
+            font-size: var(--buttonFS);
+            padding: 15px 30px;
             cursor: pointer;
             color: white;
             background-color: var(--main-red);
             border: none;
-            /* border-radius: var(--border-radius); */
-            border-radius: 5px;
-            font-weight: 700;
+            border-radius: var(--border-radius);
+            font-weight: 500;
         }
 
         .seeDemoBtn {
@@ -124,7 +117,6 @@
             button {
             padding: 15px 25px;
             /* margin: 0 auto; */
-            font-family: Noto Sans, Tahoma;
             font-size: 12px;
             font-weight: 600;
             color: #ffffff;
@@ -143,14 +135,11 @@
         }
         h1 {
             font-size: 30px;
-            font-family: Noto Sans;
             font-weight: 800;
         }
         p {
             max-width: 700px;
-        /* font-size: 17px; */
-        font-family: Raleway;
-        color: #333333;
+            color: #333333;
         }
     }
 }

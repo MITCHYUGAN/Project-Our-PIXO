@@ -5,12 +5,11 @@
   gap: 30px;
   text-align: center;
   padding: 15% 5%;
-  font-family: 'Mazzard', sans-serif;
 }
 
 .faq-section h1 {
   line-height: 45px;
-  font-size: 36px;
+  font-size: var(--Heading2FS);
 }
 
 .faq-container {
@@ -20,10 +19,10 @@
 }
 
 hr{
-    background-color: #ed1d61;
-    border-width: 0;
-    padding-top: 1px;
-    margin-bottom: 10px;
+  background-color: #ed1d61;
+  border-width: 0;
+  padding-top: 1px;
+  margin-bottom: 10px;
 }
 
 .faq-card {
@@ -46,15 +45,15 @@ hr{
 }
 
 .faq-question h2 {
-  font-size: 20px;
+  font-size: var(--Heading4FS);
   margin: 0;
   word-wrap: break-word;
   line-break: auto;
 }
 
 .faq-card p {
-  /* font-size: 17px; */
-  line-height: 23px;
+  font-size: var(--ParagraphFS);
+  /* line-height: 23px; */
 }
 
 .faq-question img{

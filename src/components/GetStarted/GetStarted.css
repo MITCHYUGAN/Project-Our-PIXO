@@ -8,10 +8,9 @@
     margin-top: 100px;
 
     .getStartedheadingtext {
-        /* font-size: var(--HeadingFS); */
-        font-size: 36px;
-        font-weight: 700;
-        font-family: "Montserrat", sans-serif;
+        font-size: var(--Heading2FS);
+        font-weight: 800;
+        width: min(700px, 100%);
         text-align: center;
 
         span {
@@ -25,17 +24,15 @@
         width: 90%;
         justify-content: center;
         gap: 100px;
-        font-family: "Raleway", sans-serif;
 
         .step {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
 
             h1 {
-                /* font-size: var(--HeadingFS); */
-                font-size: 30px;
+                font-size: var(--Heading4FS);
 
                 span {
                     color: #EE2145;
@@ -43,8 +40,8 @@
             }
 
             p {
-                /* font-size: var(--ParagraphFS); */
-                font-size: 18px;
+                font-size: var(--ParagraphFS);
+                margin-bottom: 40px;
             }
 
             img {
@@ -56,15 +53,14 @@
     }
 
     .button{
-        font-family: "Raleway", sans-serif;
         font-size: var(--buttonFS);
-        padding: 19px 30px;
+        padding: 15px 30px;
         cursor: pointer;
         color: white;
         background-color: var(--main-red);
         border: none;
         border-radius: var(--border-radius);
-        font-weight: 700;
+        font-weight: 500;
         text-decoration: none;
     }
 }
