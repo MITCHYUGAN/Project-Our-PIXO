@@ -6,13 +6,13 @@
     position: relative;
     align-items: center;
     gap: 100px;
-    padding: 150px 0;
+    padding: 100px 0;
     margin-top: 50px;
 
     .arrow1 {
         position: absolute;
         width: 100px;
-        top: 100px;
+        top: -40px;
         right: 0;
     }
 
@@ -35,7 +35,7 @@
         place-items: center;
         width: 90%;
         /* flex-wrap: wrap; */
-        gap: 30px;
+        gap: 40px;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -56,7 +56,7 @@
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
 
 
                 h3 {
@@ -102,7 +102,7 @@
 
 @media (max-width: 600px) {
     .easytools {
-
+        padding: 50px 0;
         .arrow1,
         .arrow2 {
             width: 100px;
@@ -110,13 +110,13 @@
 
         .easytoolswrapper {
             grid-template-columns: repeat(1, 1fr);
-            gap: 30px;
+            gap: 50px;
             .tool {
                 flex-direction: row;
                 width: 100%;
 
                 div h3 {
-                    font-size: 20px;
+                    font-size: 18px;
                 }
                 div p {
                     font-size: 18px;
