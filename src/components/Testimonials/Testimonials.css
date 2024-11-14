@@ -2,7 +2,6 @@
     width: 100%;
     /* min-height: 100vh; */
     background-color: var(--main-red);
-    font-family: "Raleway", sans-serif;
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,6 @@
     }
 
     .testimonialHeadingText {
-        font-family: "Montserrat", sans-serif;
         font-size: var(--HeadingFS);
         color: white;
         text-align: center;
@@ -90,17 +88,17 @@
         gap: 20px;
         
         .arrows {
-            display: flex;
-            gap: 20px;
-            button {
-                background-color: #8D1D2F;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        font-size: 18px;
-        margin: 0 5px;
-        cursor: pointer;
-        border-radius: 50%;
+        display: flex;
+        gap: 20px;
+        button {
+            background-color: #8D1D2F;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 50%;
             }
 
             button:hover {

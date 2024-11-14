@@ -9,9 +9,7 @@
         place-items: center;
 
         h1{
-            font-family: "Noto Sans", sans-serif;
-            font-size: clamp(40px, 3.2vw, 6vw);
-            /* font-size: 42px; */
+            font-size: var(--HeadingFS);
             text-align: center;
         }
     }
@@ -26,10 +24,8 @@
         
         h1{
             text-align: center;
-            font-family: "Montserrat", sans-serif;
-            width: min(1000px, 90%);
-            /* font-size: clamp(30px, 2.2vw, 3vw); */
-            font-size: 36px;
+            width: min(800px, 90%);
+            font-size: var(--Heading2FS);
             margin-bottom: 30px;
         }
         
@@ -51,8 +47,7 @@
                 margin-bottom: 20px;
                 
                 h2{
-                    font-size: 32px;
-                    /* font-size: var(--HeadingFS); */
+                    font-size: var(--Heading3FS);
                     color: #EE2145;
                 }
 
@@ -68,13 +63,11 @@
                     gap: 10px;
 
                     h3{
-                        font-size: 24px;
-                        /* font-size: clamp(25px, 1.7vw, 2vw); */
+                        font-size: var(--Heading4FS);
                     }
 
                     p{
-                        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
-                        font-size: 22px;
+                        font-size: var(ParagraphFS);
                         color: #333333;
                     }
                 }
@@ -91,15 +84,11 @@
 
         h1{
             text-align: center;
-            font-family: "Montserrat", sans-serif;
-            /* font-size: var(--HeadingFS); */
-            font-size: 36px;
+            font-size: var(--Heading2FS);
         }
 
         p{
-            /* font-size: clamp(20px, 1.5vw, 2vw); */
-            font-size: 22px;
-            font-family: "Raleway", sans-serif;
+            font-size: var(--ParagraphFS);
             width: 80%;
             text-align: center;
             color: #333333;
