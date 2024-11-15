@@ -144,9 +144,7 @@
         place-items: center;
 
         h1{
-            font-family: "Noto Sans", sans-serif;
-            /* font-size: clamp(40px, 3.2vw, 6vw); */
-            font-size: 36px;
+            font-size: var(--Heading2FS);
             text-align: center;
         }
     }
@@ -161,10 +159,8 @@
         
         h1{
             text-align: center;
-            font-family: "Montserrat", sans-serif;
-            width: min(1000px, 90%);
-            /* font-size: clamp(30px, 2.2vw, 3vw); */
-            font-size: 30px;
+            width: min(900px, 90%);
+            font-size: var(--Heading3FS);
             margin-bottom: 30px;
         }
         
@@ -186,8 +182,7 @@
                 margin-bottom: 20px;
                 
                 h2{
-                    font-size: 30px;
-                    /* font-size: var(--HeadingFS); */
+                    font-size: var(--Heading3FS);
                     color: #EE2145;
                 }
 
@@ -203,13 +198,11 @@
                     gap: 10px;
 
                     h3{
-                        font-size: 22px;
-                        /* font-size: clamp(25px, 1.7vw, 2vw); */
+                        font-size: var(--Heading4FS);
                     }
 
                     p{
-                        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
-                        font-size: 18px;
+                        font-size: var(--ParagraphFS);
                         color: #333333;
                     }
                 }
@@ -227,14 +220,11 @@
 
         h1{
             text-align: center;
-            font-family: "Montserrat", sans-serif;
-            /* font-size: var(--HeadingFS); */
-            font-size: 30px;
+            font-size: var(--Heading3FS);
         }
 
         p{
-            /* font-size: clamp(20px, 1.5vw, 2vw); */
-            font-size: 18px;
+            font-size: var(--ParagraphFS);
             font-family: "Raleway", sans-serif;
             width: 90%;
             text-align: center;

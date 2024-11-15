@@ -83,3 +83,80 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .features{
+        width: 100%;
+        min-height: 200vh;
+    
+        .featuresHero{
+            width: 100%;
+            min-height: 40vh;
+            background-color: #FFECBA;
+            border-bottom-left-radius: 40%;
+            display: grid;
+            place-items: center;
+    
+            h1{
+                font-size: var(--Heading2FS);
+                text-align: center;
+            }
+        }
+    
+        .giveBusinessProfTouch{
+            margin: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+    
+            .giveBusinessProfTouchH1{
+                text-align: center;
+                font-size: var(--Heading3FS);
+                width: min(700px, 90%);
+            }
+    
+            .giveBusinessProfTouchContents{
+                display: flex;
+                width: 100%;
+                gap: 25px;
+                row-gap: 100px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                .profTouch{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 80%;
+    
+                    h3 {
+                        font-size: var(--Heading4FS);
+        
+                        span {
+                            color: #EE2145;
+                        }
+                    }
+        
+                    p {
+                        font-size: var(--ParagraphFS);
+                    }
+        
+                    img {
+                        width: min(70%, 100%);
+                        width: 100%;
+                    }
+                }
+                .profTouch-title-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }    
+}
