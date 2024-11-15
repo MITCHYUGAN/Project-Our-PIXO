@@ -35,8 +35,8 @@
         place-items: center;
         width: 90%;
         /* flex-wrap: wrap; */
-        gap: 40px;
-        align-items: center;
+        gap: 30px;
+        align-items: flex-start;
         justify-content: center;
         margin: 0 auto;
         row-gap: 60px;
