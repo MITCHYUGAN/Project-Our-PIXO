@@ -172,7 +172,7 @@
     }
 
     .getpaidincurrencies .heading h1 {
-        font-size: 30px;
+        font-size: var(--Heading3FS);
         font-weight: 800;
         width: min(400px, 100%);
         margin: 0 auto;
@@ -180,7 +180,7 @@
     }
     
     .getpaidincurrencies p {
-        /* font-size: 18px; */
+        font-size: var(--ParagraphFS);
         line-height: 115%;
         width: min(400px, 100%);
         height: auto;
@@ -196,6 +196,6 @@
         margin: 0 auto;
     }
     .getpaidincurrencies .coming-soon h2{
-        font-size: 30px;
+        font-size: var(--Heading3FS);
     }
 }

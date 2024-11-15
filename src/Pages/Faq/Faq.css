@@ -75,10 +75,25 @@ hr{
     gap: 50px;
   }
   .faq-question h2 {
-    font-size: 22px;
+    font-size: var(--Heading4FS);
   }
   .faq-card p {
-  /* font-size: 19px; */
+  font-size: var(--ParagraphFS);
+  line-height: 25px;
+}
+}
+
+
+@media (min-width: 600px) {
+  .faq-section {
+    padding: 5%;
+    gap: 50px;
+  }
+  .faq-question h2 {
+    font-size: var(--Heading4FS);
+  }
+  .faq-card p {
+  font-size: var(--ParagraphFS);
   line-height: 25px;
 }
 }

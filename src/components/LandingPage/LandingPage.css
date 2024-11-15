@@ -242,24 +242,24 @@
     .hero-page h1 {
         font-weight: 850;
         width: min(400px, 100%);
-        font-size: 32px;
+        font-size: var(--Heading2FS);
         margin: 0 auto;
         margin-bottom: 30px;
         line-height: 115%;
     }
     .hero-page h4 {
         font-weight: 400;
-        font-size: 16px;
+        font-size: var(--Paragraph2FS);
         margin-bottom: 30px;
     }
     .hero-page p {
-        font-weight: 300;
-        font-size: 18px;
+        font-size: var(--ParagraphFS);
         width: 90%;
         margin: 0 auto;
         margin-bottom: 50px;
     }
     .hero-page .hero-footer p{
+        font-size: var(--ParagraphFS);
         color: #333333;
         font-weight: 600;
     }

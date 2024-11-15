@@ -28,7 +28,7 @@
     }
 
     .testimonialHeadingText {
-        font-size: var(--HeadingFS);
+        font-size: var(--Heading2FS);
         color: white;
         text-align: center;
     }
@@ -169,9 +169,9 @@
             margin-bottom: 10px;
                 }
                 p{
-                    font-size: 14px;
-        line-height: 1.5;
-        color: #555;
+                    font-size: var(--ParagraphFS);
+                    line-height: 1.5;
+                    color: #555;
                 }
 
                 .slidesContents{

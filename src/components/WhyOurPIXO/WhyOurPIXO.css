@@ -213,13 +213,16 @@
         text-align: center;
     }
     .why-ourpixo h2 {
-        /* font-weight: 800;
-        font-size: 30px; */
+        font-weight: 800;
+        font-size: var(--Heading3FS);
         align-items: center;
         text-align: center;
         width: min(355px, 100%);
         margin: 0 auto;
         margin-bottom: 70px;
+    }
+    .why-ourpixo p {
+        font-size: var(--ParagraphFS);
     }
     .why-ourpixo .first {
         position: absolute;

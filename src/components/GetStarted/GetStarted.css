@@ -33,6 +33,7 @@
 
             h1 {
                 font-size: var(--Heading4FS);
+                font-weight: 500;
 
                 span {
                     color: #EE2145;
@@ -71,4 +72,41 @@
             grid-template-columns: 1fr;
         }
     }
+}
+
+@media (max-width: 600px) {
+    .getStarted {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        margin-top: 100px;
+    
+        .getStartedheadingtext {
+            font-size: var(--Heading3FS);
+            font-weight: 800;
+            width: min(700px, 100%);
+            text-align: center;
+    
+            span {
+                color: #EE2145;
+            }
+        }
+    
+    
+        .button{
+            font-size: var(--button2FS);
+            padding: 15px 30px;
+            cursor: pointer;
+            color: white;
+            background-color: var(--main-red);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+    
 }
