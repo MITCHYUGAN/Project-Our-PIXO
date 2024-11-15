@@ -33,7 +33,7 @@
 
             h1 {
                 font-size: var(--Heading4FS);
-                font-weight: 500;
+                font-weight: 600;
 
                 span {
                     color: #EE2145;
@@ -87,7 +87,7 @@
         .getStartedheadingtext {
             font-size: var(--Heading3FS);
             font-weight: 800;
-            width: min(700px, 100%);
+            width: min(600px, 90%);
             text-align: center;
     
             span {
