@@ -155,6 +155,11 @@
 
 @media (max-width: 600px) {
     .testimonial{
+        .testimonialHeadingText {
+            font-size: var(--Heading3FS);
+            color: white;
+            text-align: center;
+        }
         .slide{
             .slideWrapper{
                 flex-direction: column;
