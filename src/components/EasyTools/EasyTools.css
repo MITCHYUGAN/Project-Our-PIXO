@@ -42,7 +42,6 @@
         row-gap: 60px;
 
         .tool {
-            /* width: 40%; */
             margin-top: 30px;
             display: flex;
             flex-direction: column;

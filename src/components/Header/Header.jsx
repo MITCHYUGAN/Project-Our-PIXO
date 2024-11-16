@@ -68,7 +68,7 @@ const Header = () => {
               Login
             </Link>
           </li>
-          <Link to="https://pricing.pixomaticc.com/" target="_blank">
+          <Link to="https://app.pixomaticc.com/auth/signup" target="_blank">
             <button
               type="button"
               id="try-free-btn"
