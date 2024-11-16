@@ -3,7 +3,7 @@
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 70px;
     align-items: center;
     padding: 50px 20px 20px 20px;
     justify-content: space-between;
@@ -91,9 +91,18 @@
 
 @media (max-width: 600px) {
     .footer{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        padding: 50px 20px 20px 20px;
+        justify-content: space-between;
+
         .footerWrapper{
             flex-direction: column;
-            gap: 60px;
+            gap: 50px;
 
             .footerContents{
                 width: 100%;

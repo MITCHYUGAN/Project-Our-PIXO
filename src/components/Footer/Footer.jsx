@@ -47,10 +47,10 @@ const Footer = () => {
                 <Link to="/showcase">Client Galleries</Link>
               </li>
               <li>
-                <Link to="/showcase">Marketplace</Link>
+                <Link to="/marketplace">Marketplace</Link>
               </li>
               <li>
-                <Link to="/showcase">Bookings</Link>
+                <Link to="/bookings">Bookings</Link>
               </li>
             </ul>
             {/* <p>How it Works</p>
