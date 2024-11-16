@@ -208,7 +208,7 @@
         color: #EE2145;
         font-weight: 700;
         margin-bottom: 20px;
-        font-size: 16px;
+        font-size: var(--Paragraph2FS);
         align-items: center;
         text-align: center;
     }
@@ -223,6 +223,7 @@
     }
     .why-ourpixo p {
         font-size: var(--ParagraphFS);
+        width: min(400px, 100%);
     }
     .why-ourpixo .first {
         position: absolute;

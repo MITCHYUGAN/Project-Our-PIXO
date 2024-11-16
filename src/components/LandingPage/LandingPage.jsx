@@ -9,6 +9,7 @@ import { EasyToolsData } from "../EasyTools/EasyToolsData"
 import Testimonials from '../Testimonials/Testimonials'
 import GetStartedForFree from '../GetStartedForFree/GetStartedForFree'
 import HeroPageImage from "./assets/hero page img.png";
+import { FeaturesData } from "../../Pages/Features/FeaturesData"
 
 
 const LandingPage = () => {
@@ -21,7 +22,7 @@ const LandingPage = () => {
               <h4>STAND OUT AS A CREATIVE</h4>
               <h1>The best way to deliver your work to clients in a professional manner</h1>
               <p>OurPixo gives you tools at the tip of your fingers to create, customize, and deliver your work to clients wherever they are.</p>
-              <button>Try 1 month free</button>
+              <button><a href='https://app.pixomaticc.com/auth/signup'>Try 1 month free</a></button>
             </div>
             <div className='landing-img'>
               <img src={landingImg} alt="" />
@@ -34,7 +35,7 @@ const LandingPage = () => {
         <h4>STAND OUT AS A CREATIVE</h4>
         <h1>The ultimate platform for <span>African</span> photographers</h1>
         <p>Professional photo galleries, client selections & seamless payments. <b>Start free, upgrade anytime.</b></p>
-        <a href="#">
+        <a href="https://app.pixomaticc.com/auth/signup">
           <button class="button">Try 1 month free</button>
         </a>
         <img src={HeroPageImage} class="hero-page-img" />

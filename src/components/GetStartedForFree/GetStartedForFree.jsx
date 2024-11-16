@@ -15,10 +15,10 @@ const GetStartedForFree = () => {
         <p>Let’s help bring out your creative side, ease your workload and grow your business. Start creating beautiful galleries today with OurPixo!</p>
         <img src={arrowBig} className="arrowBig" alt="" />
         <div className="getStartedForFreeButtons">
-          <Link to="https://pricing.pixomaticc.com/" target="_blank">
+          <Link to="https://app.pixomaticc.com/auth/signup" target="_blank">
             <button>Try 1 month free</button>
           </Link>
-            <Link to="/showcase">
+            <Link to="/">
             <button className="seeDemoBtn">See a demo</button>
             </Link>
         </div>

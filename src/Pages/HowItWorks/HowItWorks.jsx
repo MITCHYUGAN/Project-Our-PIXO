@@ -72,7 +72,7 @@ const HowItWorks = () => {
             </div>
           </div>
         </section>
-        <section className="helpToGetStarted">
+        <section className="helpToGetStarted" id="getstarteddemo">
           <h1>Need help getting started?</h1>
           <p>
             A quick walk through of <span>OurPixo</span> to get you started
