@@ -16,10 +16,10 @@ const Footer = () => {
             <img src={logo} alt="" />
           </Link>
           <div>
-            <a href="mailto:support@ourpixo.com">
+            <a href="mailto:support@ourpixo.com" target="_blank">
               <img src={emailIcon} alt="" />
             </a>
-            <Link to="/">
+            <Link to="https://wa.me/+2348105420187?text=Hello" target="_blank">
               <img src={whatsappIcon} alt="" />
             </Link>
             <Link
@@ -69,7 +69,9 @@ const Footer = () => {
                   <Link to="faq">FAQs</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact Us</Link>
+                  <Link to="https://wa.me/+2348105420187?text=Hello" target="_blank">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom"
+import { useEffect } from "react"
 import EasyTools from "../../components/EasyTools/EasyTools"
 import GetStartedForFree from "../../components/GetStartedForFree/GetStartedForFree"
 import { FeaturesData } from "../Features/FeaturesData"
@@ -7,6 +9,17 @@ import vector from './assets/vector1.svg'
 import "./HowItWorks.css"
 
 const HowItWorks = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [hash]);
+
     return (
       <main className="howitworks">
         <header className="howitworksHero">
@@ -72,7 +85,7 @@ const HowItWorks = () => {
             </div>
           </div>
         </section>
-        <section className="helpToGetStarted" id="getstarteddemo">
+        <section className="helpToGetStarted" id="get-started-demo">
           <h1>Need help getting started?</h1>
           <p>
             A quick walk through of <span>OurPixo</span> to get you started
