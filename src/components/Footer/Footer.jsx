@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footerWrapper">
         <div className="footerheading">
           <Link to="/">
-          <img src={logo} alt="" />
+            <img src={logo} alt="" />
           </Link>
           <div>
             <a href="mailto:support@ourpixo.com">
@@ -44,13 +44,15 @@ const Footer = () => {
                 <Link to="/features">Features</Link>
               </li>
               <li>
-                <Link to="/showcase">Client Galleries</Link>
+                <Link to="/showcase?section=client-gallery">
+                  Client Galleries
+                </Link>
               </li>
               <li>
-                <Link to="/marketplace">Marketplace</Link>
+                <Link to="/showcase?section=marketplace">Marketplace</Link>
               </li>
               <li>
-                <Link to="/bookings">Bookings</Link>
+                <Link to="/showcase?section=bookings">Bookings</Link>
               </li>
             </ul>
             {/* <p>How it Works</p>

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Gallery.css";
 import GallerySection from "./GallerySection";
 import BookingSection from "./BookingSection";
@@ -11,6 +12,19 @@ function MainComponent() {
   const [selectedSection, setSelectedSection] = useState("client-gallery");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
+
+  // Update selectedSection based on query parameter
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const section = params.get("section");
+    if (section) {
+      setSelectedSection(section);
+    }
+
+    // scroll to top of page
+    window.scrollTo(0,0)
+  }, [location]);
 
   const handleSelectionChange = (value) => {
     setSelectedSection(value);
