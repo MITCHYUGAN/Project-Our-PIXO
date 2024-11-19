@@ -26,4 +26,4 @@ const TestimonialData = [
     },
 ]
 
-export default Testimonial
+export default TestimonialData

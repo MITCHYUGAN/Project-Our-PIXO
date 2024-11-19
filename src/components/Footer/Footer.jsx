@@ -70,7 +70,7 @@ const Footer = () => {
             <p>Features</p>
             <p>Client Galleries</p>
             <p>Marketplace</p>
-            <p>Bookings</p> */}
+            <p>Bookings</p> */} 
           </div>
           <div className="footerContent footerContent2">
             <div className="footerContent">
