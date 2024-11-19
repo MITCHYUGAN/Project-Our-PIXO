@@ -1,4 +1,3 @@
-import landingImg from './assets/landing-img.svg'
 import './LandingPage.css'
 
 import WhyOurPIXO from '../WhyOurPIXO/WhyOurPIXO'
@@ -9,36 +8,40 @@ import { EasyToolsData } from "../EasyTools/EasyToolsData"
 import Testimonials from '../Testimonials/Testimonials'
 import GetStartedForFree from '../GetStartedForFree/GetStartedForFree'
 import HeroPageImage from "./assets/hero page img.png";
+import circle from "./assets/circle.svg"
+import triangle from "./assets/triangle.svg"
+// import shapes from "./assets/shapes1.svg"
 
 
 const LandingPage = () => {
   return (
     <>
-      {/* <section className="landingPage">
-        <div className='landingPage-wrapper'>
-          <div className='landingPage-content-wrapper'>
-            <div className='landing-contents'>
-              <h4>STAND OUT AS A CREATIVE</h4>
-              <h1>The best way to deliver your work to clients in a professional manner</h1>
-              <p>OurPixo gives you tools at the tip of your fingers to create, customize, and deliver your work to clients wherever they are.</p>
-              <button>Try 1 month free</button>
-            </div>
-            <div className='landing-img'>
-              <img src={landingImg} alt="" />
-              <h1 className='landingBottomText'>Trusted <span>Across Africa</span> and <span>Beyond</span></h1>
-            </div>
-          </div>
+      <section className="hero-page">
+        <div className='background-shapes'>
+          <img src={circle} className='shape shape1' alt="" />
+          <img src={triangle} className='shape shape2' alt="" />
+          <img src={circle} className='shape shape3' alt="" />
+          {/* <img src={shapes} className='shapes' alt="" /> */}
         </div>
-      </section> */}
-      <section class="hero-page">
         <h4>STAND OUT AS A CREATIVE</h4>
         <h1>The ultimate platform for <span>African</span> photographers</h1>
         <p>Professional photo galleries, client selections & seamless payments. <b>Start free, upgrade anytime.</b></p>
+        <div className='background-shapes'>
+          <img src={circle} className='shape shape4' alt="" />
+          <img src={triangle} className='shape shape5' alt="" />
+          <img src={circle} className='shape shape6' alt="" />
+          <img src={circle} className='shape shape7' alt="" />
+          <img src={circle} className='shape shape8' alt="" />
+        </div>
         <a href="#">
-          <button class="button">Try 1 month free</button>
+          <button className="button">Try 1 month free</button>
         </a>
-        <img src={HeroPageImage} class="hero-page-img" />
-        <div class="hero-footer"><p>Trusted <span class="highlight">Across Africa</span> and <span class="highlight">Beyond</span></p></div>
+        <div className='images-shapes'>
+          <img src={HeroPageImage} className="hero-page-img" />
+          <img src={circle} className='shape shape9' alt="" />
+          <img src={circle} className='shape shape10' alt="" />
+        </div>
+        <div className="hero-footer"><p>Trusted <span className="highlight">Across Africa</span> and <span className="highlight">Beyond</span></p></div>
       </section>
       <WhyOurPIXO />
       <GetStarted />
