@@ -35,10 +35,24 @@ const Footer = () => {
             <h3>Product</h3>
             <ul>
               <li>
-                <Link to="/howitworks">How it Works</Link>
+                <Link
+                  to="/howitworks"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  How it Works
+                </Link>
               </li>
               <li>
-                <Link to="/features">Features</Link>
+                <Link
+                  to="/features"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  Features
+                </Link>
               </li>
               <li>
                 <Link to="/showcase?section=client-gallery">
@@ -63,7 +77,14 @@ const Footer = () => {
               <h3>Support</h3>
               <ul>
                 <li>
-                  <Link to="faq">FAQs</Link>
+                  <Link
+                    to="faq"
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                  >
+                    FAQs
+                  </Link>
                 </li>
               </ul>
             </div>
