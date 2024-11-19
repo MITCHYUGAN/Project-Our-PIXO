@@ -132,144 +132,7 @@
 
 }
 
-@media (max-width: 600px) {
-    .howitworks{    
-    
-    .howitworksHero{
-        width: 100%;
-        min-height: 40vh;
-        background-color: #B4ECCD;
-        border-bottom-right-radius: 40%;
-        display: grid;
-        place-items: center;
 
-        h1{
-            font-family: "Noto Sans", sans-serif;
-            /* font-size: clamp(40px, 3.2vw, 6vw); */
-            font-size: 36px;
-            text-align: center;
-        }
-    }
-
-    .startCreating{
-        margin: 100px 0 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-        align-items: center;
-        font-family: "Raleway", sans-serif;
-        
-        h1{
-            text-align: center;
-            font-family: "Montserrat", sans-serif;
-            width: min(1000px, 90%);
-            /* font-size: clamp(30px, 2.2vw, 3vw); */
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .steps{
-            display: flex;
-            color: #333333;
-            gap: 25px;
-            flex-wrap: wrap;
-            width: 90%;
-            row-gap: 30px;
-            
-            .step{
-                width: 40%;
-                display: flex;
-                gap: 20px;
-                /* align-items: center; */
-                position: relative;
-                margin: 0 auto;
-                margin-bottom: 20px;
-                
-                h2{
-                    font-size: 30px;
-                    /* font-size: var(--HeadingFS); */
-                    color: #EE2145;
-                }
-
-                .vector{
-                    position: absolute;
-                    bottom: 0;
-                    display: none;
-                }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-
-                    h3{
-                        font-size: 22px;
-                        /* font-size: clamp(25px, 1.7vw, 2vw); */
-                    }
-
-                    p{
-                        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
-                        font-size: 18px;
-                        color: #333333;
-                    }
-                }
-
-            }
-        }
-    }
-
-    .helpToGetStarted{
-        display: flex;
-        padding: 50px 20px;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-
-        h1{
-            text-align: center;
-            font-family: "Montserrat", sans-serif;
-            /* font-size: var(--HeadingFS); */
-            font-size: 30px;
-        }
-
-        p{
-            /* font-size: clamp(20px, 1.5vw, 2vw); */
-            font-size: 18px;
-            font-family: "Raleway", sans-serif;
-            width: 90%;
-            text-align: center;
-            color: #333333;
-
-            span{
-                color: #BC203B;
-            }
-        }
-
-        img{
-            width: 80%;
-        }
-    }
-
-
-    .iframe-container {
-        width: 700px;
-        height: 400px;
-        position: relative;
-        background-color: cornflowerblue;
-        overflow: hidden;
-    }
-
-    .iframe-container .iframe-player {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-    }  
-}
-}
 
 @media (max-width: 1126.100px) {
     .howitworks{
@@ -296,11 +159,11 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .howitworks{
         .startCreating{
             .steps{
-                gap: 10px;
+                gap: 1px;
 
                 .step{
                     min-height: 140px;
@@ -311,8 +174,37 @@
                 }
             }
         }
+
+        .helpToGetStarted{
+            display: flex;
+            padding: 50px 20px;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+    
+            h1{
+                text-align: center;
+                font-size: var(--Heading3FS);
+            }
+    
+            p{
+                font-size: var(--ParagraphFS);
+                width: 90%;
+                text-align: center;
+                color: #333333;
+    
+                span{
+                    color: #BC203B;
+                }
+            }
+    
+            img{
+                width: 80%;
+            }
+        }
+
         .iframe-container {
-            width: 400px;
+            width: min(300px, 100%);
             height: 250px;
             position: relative;
             background-color: cornflowerblue;

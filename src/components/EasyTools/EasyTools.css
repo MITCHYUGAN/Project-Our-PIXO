@@ -5,27 +5,27 @@
     place-items: center;
     position: relative;
     align-items: center;
-    gap: 100px;
-    padding: 150px 0;
-    margin-top: 50px;
+    gap: 50px;
+    padding: 100px 0;
 
     .arrow1 {
         position: absolute;
         width: 100px;
-        top: 100px;
+        top: 0;
         right: 0;
     }
 
     .arrow2 {
         position: absolute;
         width: 100px;
-        bottom: 30px;
+        bottom: 0;
         left: 0;
     }
 
     h1 {
         font-size: var(--Heading2FS);
         text-align: center;
+        margin-top: 50px;
     }
 
     .easytoolswrapper {
@@ -35,14 +35,14 @@
         place-items: center;
         width: 90%;
         /* flex-wrap: wrap; */
-        gap: 30px;
+        gap: 50px;
         align-items: flex-start;
         justify-content: center;
         margin: 0 auto;
         row-gap: 60px;
 
         .tool {
-            /* width: 40%; */
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -56,7 +56,7 @@
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
 
 
                 h3 {
@@ -101,8 +101,14 @@
 }
 
 @media (max-width: 600px) {
+    .easytools h1 {
+        font-size: var(--Heading3FS);
+        text-align: center;
+        margin-top: 50px;
+    }
     .easytools {
-
+        padding: 50px 0;
+        padding-bottom: 100px;
         .arrow1,
         .arrow2 {
             width: 100px;
@@ -116,16 +122,27 @@
                 width: 100%;
 
                 div h3 {
-                    font-size: 20px;
+                    font-size: var(--ParagraphFS);
                 }
                 div p {
-                    font-size: 18px;
+                    font-size: var(--ParagraphFS);
                 }
 
                 img{
-                    width: 60px;
+                    width: 40px;
                 }
             }
+        }
+
+        button {
+            font-size: var(--button2FS);
+            padding: 15px 30px;
+            cursor: pointer;
+            color: white;
+            background-color: var(--main-red);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
         }
     }
 }

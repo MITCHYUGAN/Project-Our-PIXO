@@ -117,12 +117,11 @@
             button {
             padding: 15px 25px;
             /* margin: 0 auto; */
-            font-size: 12px;
+            font-size: var(--button2FS);
             font-weight: 600;
             color: #ffffff;
             background-color: #872032;
-            width: 150px;
-            border-radius: 5px;
+            width: 160px;
             border: none;
             outline: none;
             justify-content: center;
@@ -134,7 +133,7 @@
             }
         }
         h1 {
-            font-size: 30px;
+            font-size: var(--Heading3FS);
             font-weight: 800;
         }
         p {

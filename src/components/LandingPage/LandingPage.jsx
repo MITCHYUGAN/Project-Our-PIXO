@@ -10,7 +10,6 @@ import GetStartedForFree from '../GetStartedForFree/GetStartedForFree'
 import HeroPageImage from "./assets/hero page img.png";
 import circle from "./assets/circle.svg"
 import triangle from "./assets/triangle.svg"
-// import shapes from "./assets/shapes1.svg"
 
 
 const LandingPage = () => {

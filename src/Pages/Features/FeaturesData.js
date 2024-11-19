@@ -64,4 +64,4 @@ export const professionalTouchData = [
       "Track projects, manage bookings, see payments, and get updates on how your business is doing. It makes your work easier, saves time, and helps you stay organized.",
     imageUrl: require("./assets/featureBanner3.svg"),
   },
-];
+]
