@@ -8,27 +8,21 @@ const TestimonialData = [
     },
     {
         img: require("./assets/img2.svg"), 
-        name: "John Simon",
-        position: "Web developer",
-        paragraph: "“The new gallery feature has changed how I interact with clients. Before, sharing work was cumbersome, but now it's streamlined. My clients can browse their photos effortlessly, giving them a seamless experience while saving me countless hours of follow-ups. I can’t imagine going back!”"
+        name: "Veronica Omah",
+        position: "CEO at Baby’s Dream By Vee",
+        paragraph: "“OurPixo consistently exceeds expectations by efficiently managing clients’ selections, deliveries, and payments. Its seamless process and professional service simplify what could otherwise be a complex hassle, making it a delight to use every time.”"
     },
     {
         img: require("./assets/img5.svg"), 
-        name: "Rachael James",
-        position: "UIUX Designer",
-        paragraph: "“One thing I love about OurPixo is the real-time notifications. I no longer have to worry about missing important client updates or feedback. Every alert keeps me on track, helping me respond faster, which clients appreciate. It’s like having an assistant with me at all times.”"
+        name: "Precious Jibunoh",
+        position: "Lead Photographer at PJ Shots Studio",
+        paragraph: "“OurPixo is such an outstanding initiative. Not only does it give me an edge in my business as it makes me very professional, I no longer get owed. Kudos Team Pixo!”"
     },
     {
         img: require("./assets/img4.svg"), 
-        name: "Andrew favour",
-        position: "Graphics designer",
-        paragraph: "“The flexibility of the invoicing system is a game-changer. I used to spend so much time organizing payments, but now it’s all in one place. Clients pay quickly and easily, and I no longer have to chase after them. This tool has helped me look more professional and focused.”"
-    },
-    {
-        img: require("./assets/img3.svg"), 
-        name: "Patrick Bateman",
-        position: "Actor/Filmmaker",
-        paragraph: "“OurPixo's sharing capabilities are incredible. My clients can view and select their favorite shots without any hassle, which has made the process more collaborative and enjoyable. Not only does it save time, but it also makes me look organized and prepared. Truly invaluable!”"
+        name: "Dayo Ayeni",
+        position: "Creative Director at Deeplus Media",
+        paragraph: "“My favourite feature on OurPixo is the payments feature because it makes it easier to collect payment balance before final delivery.”"
     },
 ]
 
