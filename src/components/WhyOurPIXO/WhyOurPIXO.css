@@ -200,6 +200,7 @@
         }
     } */
     .why-ourpixo {
+        margin-top: 40px;
         padding: 50px 20px;
         padding-bottom: 50px;
         display: block;
@@ -208,6 +209,7 @@
         color: #EE2145;
         font-weight: 700;
         margin-bottom: 20px;
+        margin: 0 auto;
         font-size: var(--Paragraph2FS);
         align-items: center;
         text-align: center;
@@ -227,13 +229,13 @@
     }
     .why-ourpixo .first {
         position: absolute;
-        top: -30px;
-        left: 90px;
+        top: -10px;
+        left: 50px;
     }
     .why-ourpixo .second {
         position: absolute;
-        right: 100px;
-        bottom: 0;
+        right: 30px;
+        bottom: 0px;
     }
     .benefits-section {
         grid-template-columns: repeat(1, 1fr);

@@ -68,11 +68,6 @@ const Footer = () => {
                 <li>
                   <Link to="faq">FAQs</Link>
                 </li>
-                <li>
-                  <Link to="https://wa.me/+2348105420187?text=Hello" target="_blank">
-                    Contact Us
-                  </Link>
-                </li>
               </ul>
             </div>
             <div>
