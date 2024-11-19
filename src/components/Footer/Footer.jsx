@@ -22,10 +22,7 @@ const Footer = () => {
             <Link to="https://wa.me/+2348105420187?text=Hello" target="_blank">
               <img src={whatsappIcon} alt="" />
             </Link>
-            <Link
-              to="https://www.linkedin.com/company/99833453/admin/dashboard/"
-              target="_blank"
-            >
+            <Link to="https://www.linkedin.com/company/99833453/admin/dashboard/" target="_blank">
               <img src={linkedInIcon} alt="" />
             </Link>
             <Link to="https://www.instagram.com/ourpixo/" target="_blank">
@@ -87,14 +84,6 @@ const Footer = () => {
                     }
                   >
                     FAQs
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="https://wa.me/+2348105420187?text=Hello"
-                    target="_blank"
-                  >
-                    Contact Us
                   </Link>
                 </li>
               </ul>

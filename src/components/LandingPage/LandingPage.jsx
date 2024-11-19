@@ -29,7 +29,6 @@ const LandingPage = () => {
           <img src={circle} className='shape shape4' alt="" />
           <img src={triangle} className='shape shape5' alt="" />
           <img src={circle} className='shape shape6' alt="" />
-          <img src={circle} className='shape shape7' alt="" />
           <img src={circle} className='shape shape8' alt="" />
         </div>
         <a href="#">
