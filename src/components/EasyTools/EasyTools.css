@@ -11,14 +11,14 @@
     .arrow1 {
         position: absolute;
         width: 100px;
-        top: 0;
+        top: 14px;
         right: 0;
     }
 
     .arrow2 {
         position: absolute;
         width: 100px;
-        bottom: 0;
+        bottom: 14px;
         left: 0;
     }
 

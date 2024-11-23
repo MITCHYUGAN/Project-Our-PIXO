@@ -45,7 +45,7 @@
     height: 450px;
     position: relative;
     /* background-color: rgba(10, 9, 9, 0.336); */
-    background-color: rgba(135, 32, 49, 0.163);
+    background-color: rgba(135, 32, 49, 0.20);
 }
 .gallery-banner .banner-image-wrapper img {
     position: absolute;
@@ -57,7 +57,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 25%;
 }
 
 .gallery-banner .banner-text {

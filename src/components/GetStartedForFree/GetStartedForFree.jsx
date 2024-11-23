@@ -12,7 +12,7 @@ const GetStartedForFree = () => {
       <img src={arrow1} className="arrow1" alt="" />
       <img src={arrow2} className="arrow2" alt="" />
       <h1>
-        Get Started for <span>FREE</span>
+        Get Started <span>TODAY</span>
       </h1>
       <p>
         Let’s help bring out your creative side, ease your workload and grow
@@ -21,7 +21,7 @@ const GetStartedForFree = () => {
       <img src={arrowBig} className="arrowBig" alt="" />
       <div className="getStartedForFreeButtons">
         <Link to="https://app.pixomaticc.com/auth/signup" target="_blank">
-          <button>Try 1 month free</button>
+          <button>Get Started</button>
         </Link>
         <Link to="/howitworks#get-started-demo">
           <button className="seeDemoBtn">See a demo</button>

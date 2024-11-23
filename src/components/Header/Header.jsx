@@ -74,7 +74,7 @@ const Header = () => {
               id="try-free-btn"
               aria-labelledby="label try-free-btn"
             >
-              Try 1 month free
+              Get Started
             </button>
           </Link>
         </ul>

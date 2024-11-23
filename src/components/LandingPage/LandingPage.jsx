@@ -24,7 +24,7 @@ const LandingPage = () => {
         </div>
         <h4>STAND OUT AS A CREATIVE</h4>
         <h1>The ultimate platform for <span>African</span> photographers</h1>
-        <p>Professional photo galleries, client selections & seamless payments. <b>Start free, upgrade anytime.</b></p>
+        <p>Professional photo galleries, client selections & seamless payments.</p>
         <div className='background-shapes'>
           <img src={circle} className='shape shape4' alt="" />
           <img src={triangle} className='shape shape5' alt="" />
@@ -32,7 +32,7 @@ const LandingPage = () => {
           <img src={circle} className='shape shape8' alt="" />
         </div>
         <a href="#">
-          <button className="button">Try 1 month free</button>
+          <button className="button">Get Started</button>
         </a>
         <div className='images-shapes'>
           <img src={HeroPageImage} className="hero-page-img" />

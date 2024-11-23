@@ -77,7 +77,7 @@
                     }
 
                     /* p {
-                        font-size: var(--ParagraphFS);
+                        /* font-size: var(--ParagraphFS); */
                     } */
                 }
             }
