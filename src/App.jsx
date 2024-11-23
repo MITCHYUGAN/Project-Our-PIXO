@@ -9,6 +9,7 @@ import Features from './Pages/Features/Features';
 import FAQ from './Pages/Faq/Faq';
 import HowItWorks from './Pages/HowItWorks/HowItWorks';
 import ScrollToTop from './ScrollToTop';
+import PrivacyPolicy from './Pages/Privacy/PrivacyPolicy';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='faq' element={<FAQ/>} />
           <Route path="features" element={<Features/>} />
           <Route path="howitworks" element={<HowItWorks/>} />
+          <Route path="privacy-policy" element={<PrivacyPolicy/>} />
         </Routes>
       <Footer />
       </Router>

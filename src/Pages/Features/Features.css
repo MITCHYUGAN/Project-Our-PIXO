@@ -67,6 +67,9 @@
                 img {
                     width: 20px;
                 }
+                img.rotate {
+                        transform: rotate(180deg);
+                    }
             }
         }
     }
