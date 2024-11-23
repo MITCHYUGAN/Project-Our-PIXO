@@ -2,7 +2,7 @@
     width: 100%;
     /* min-height: 100vh; */
     background-color: var(--main-red);
-    padding: 50px 20px;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,32 +34,33 @@
     }
 
     .slide {
-        width: min(700px, 80%);
+        width: min(700px, 100%);
         min-height: 330px;
         background-color: #ffffff;
         color: #333333;
-        /* max-width: 300px; */
-        /* margin: 0 auto; */
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: left;
 
         .slideWrapper {
+            padding: 10px 20px;
             display: flex;
-            /* flex-direction: column; */
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
 
             img {
-                width: 70px;
-                height: 70px;
+                width: 90px;
+                height: auto;
                 border-radius: 50%;
                 object-fit: cover;
             }
 
-            /* p {
-                font-size: calc(var(--ParagraphFS) + 1px);
-            } */
+            p {
+                font-size: var(--ParagraphFS);
+            }
 
             .slidesContents {
                 align-self: center;
@@ -75,10 +76,10 @@
                     h4 {
                         font-size: var(--Heading4FS);
                     }
-
-                    /* p {
-                        font-size: var(--ParagraphFS);
-                    } */
+                    p{
+                        font-size: var(--Paragraph2FS);
+                        color: #777;
+                    }
                 }
             }
         }
@@ -94,12 +95,12 @@
         display: flex;
         gap: 20px;
         button {
-            background-color: #8D1D2F;
+            background-color: rgb(188, 32, 59, 0.3);
             color: #fff;
             border: none;
-            padding: 10px;
+            padding: 10px 15px;
             font-size: 18px;
-            margin: 0 5px;
+            margin: 0 10px;
             cursor: pointer;
             border-radius: 50%;
             }
@@ -117,47 +118,25 @@
             display: inline-block;
             width: 10px;
             height: 10px;
-            background-color: #ccc;
+            background-color: #6c1625;
             border-radius: 50%;
             margin: 0 5px;
             cursor: pointer;
         }
     
         .dot.active {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
         }
 
     }
 }
 
-/* @media (max-width: 600px) {
-    .slideWrapper {
-        flex-direction: column;
 
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .slidesHeading {
-            h4 {
-                font-size: 18px;
-                margin: 10px 0;
-                font-weight: bold;
-            }
-            
-            p {
-                font-size: 10px;
-                color: #777;
-                margin-bottom: 15px;
-            }
-        }
-    }
-} */
+
 
 @media (max-width: 600px) {
     .testimonial{
+        padding: 50px 20px;
         .testimonialHeadingText {
             font-size: var(--Heading3FS);
             color: white;
@@ -167,31 +146,31 @@
             .slideWrapper{
                 flex-direction: column;
                 gap: 10px;
-                .slidesContents {
-                    gap: 20px;
-                }
-                img{
-                    width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-                }
-                p{
-                    font-size: var(--ParagraphFS);
-                    line-height: 1.5;
-                    color: #555;
-                }
+                    .slidesContents {
+                        gap: 20px;
+                    }
+                    img{
+                        width: 90px;
+                        height: auto;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: var(--ParagraphFS);
+                        line-height: 1.5;
+                        color: #555;
+                    }
 
                 .slidesContents{
                     .slidesHeading{
                         p{
-                            font-size: 15px;
-                color: #777;
-                /* margin-bottom: 15px; */
+                            font-size: var(--Paragraph2FS);
+                            color: #777;
                         }
                     }
                 }
             }
+            
         }
     }
 }

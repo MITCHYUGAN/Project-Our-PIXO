@@ -1,11 +1,9 @@
 .getpaidincurrencies {
-    width: 100%;
-    /* min-height: 30vh; */
     background-color: var(--main-red);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     gap: 30px;
     color: white;
     margin-top: 100px;
@@ -63,7 +61,7 @@
     }
 
     h1 {
-        font-size: var(--Heading2FS);
+        font-size: var(--Heading1FS);
         width: min(1500px, 90%);
         text-align: center;
     }
@@ -73,27 +71,13 @@
         width: min(700px, 100%);
         text-align: center;
         opacity: 0.8;
-        /* font-size: clamp(20px, 1.5vw, 1.8vw); */
     }
-
-    /* span {
-        font-family: "Raleway", sans-serif;
-        font-size: clamp(25px, 1.6vw, 2vw);
-        font-weight: 900;
-        padding: 15px 20px;
-        cursor: text;
-        color: white;
-        background-color: rgba(255, 255, 255, 0.245);
-        border: none;
-        border-radius: 5px;
-        z-index: 1;
-    } */
 }
 
 .getpaidincurrencies .coming-soon {
         background-color: rgba(255, 207, 215, 0.20);
         width: fit-content;
-        padding: 10px 10px;
+        padding: 10px 20px;
         border-radius: 5px;
         /* margin: 0 auto; */
     }
@@ -171,7 +155,7 @@
     }
 
     .getpaidincurrencies .heading h1 {
-        font-size: var(--Heading3FS);
+        font-size: var(--Heading2FS);
         font-weight: 800;
         width: min(400px, 100%);
         margin: 0 auto;
@@ -190,7 +174,7 @@
     .getpaidincurrencies .coming-soon {
         background-color: rgba(255, 207, 215, 0.20);
         width: fit-content;
-        padding: 10px 10px;
+        padding: 10px 20px;
         border-radius: 5px;
         margin: 0 auto;
     }

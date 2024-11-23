@@ -11,6 +11,7 @@ import HowItWorks from './Pages/HowItWorks/HowItWorks';
 import ScrollToTop from './ScrollToTop';
 import PrivacyPolicy from './Pages/Privacy/PrivacyPolicy';
 
+
 function App() {
 
   return (

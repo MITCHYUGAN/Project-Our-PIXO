@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="footerText">Pixomatic © {new Date().getFullYear()}</p>
+      <p className="footerText">OurPixo © {new Date().getFullYear()}</p>
     </section>
   );
 }
