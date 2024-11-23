@@ -6,7 +6,7 @@ function GallerySection() {
     <div>
         <div className="client-galleries">
           {galleryData.map(data => (
-            <div>
+            <div className="gallery-card" key={data.id}>
               <a href={data.galleryLink} target="_blank">
               <img src={data.imageUrl} alt={data.imageUrl} />
               </a>

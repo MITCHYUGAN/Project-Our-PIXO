@@ -44,7 +44,7 @@ const LandingPage = () => {
       <WhyOurPIXO />
       <GetStarted />
       <GetPaidInCurrencies />
-      <EasyTools easytoolsdata={EasyToolsData} displayBtn="true" />
+      <EasyTools easytoolsdata={EasyToolsData} displayBtn="true" imageStyle={{width: "70px"}} />
       <Testimonials />
       <GetStartedForFree />
     </>

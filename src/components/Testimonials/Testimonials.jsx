@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styledArrow1 from "./assets/styledArrow1.svg"
 import styledArrow2 from "./assets/styledArrow2.svg"
-import TestimonialData from "./TestimonialsData"
+import {TestimonialData} from "./TestimonialsData"
 
 import "./Testimonials.css"
 
 const Testimonials = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -14,11 +13,21 @@ const Testimonials = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + TestimonialData.length) % TestimonialData.length
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + TestimonialData.length) % TestimonialData.length
     );
   };
 
+  // Auto-scroll functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext(); // Automatically move to the next slide
+    }, 20000); // Adjust the delay (e.g., 5000ms = 5 seconds)
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [currentIndex]); // Run only once on component mount
 
   return (
     <section className="testimonial">

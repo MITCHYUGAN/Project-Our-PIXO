@@ -99,6 +99,20 @@
     justify-content: center;
     gap: 35px;
 }
+.client-galleries .gallery-card {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Softer shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    /* margin: 10px; */
+    cursor: pointer;
+    padding: 20px 0 20px;
+    margin: 10px;
+}
+.client-galleries .gallery-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
 .client-galleries div p {
     text-transform: uppercase;
     font-size: var(--Heading4FS);
