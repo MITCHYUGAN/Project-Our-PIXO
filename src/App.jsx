@@ -9,7 +9,6 @@ import Features from './Pages/Features/Features';
 import FAQ from './Pages/Faq/Faq';
 import HowItWorks from './Pages/HowItWorks/HowItWorks';
 import ScrollToTop from './ScrollToTop';
-import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 
 
 function App() {
