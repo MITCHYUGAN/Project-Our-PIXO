@@ -122,9 +122,13 @@
     padding: 0 5%;
 }
 .coming-soon-section h2 {
-    font-size: var(--Heading2FS);
-    border-bottom: 2px solid #872032;
+    font-size: var(--Heading3FS);
+    /* border-bottom: 2px solid #872032; */
     padding-bottom: 17px;
+    background-color: rgb(188, 32, 59, 0.167);
+    padding: 20px 40px;
+    color: rgb(188, 32, 59, 0.9);
+    border-radius: 10px;
 }
 .coming-soon-section p {
     font-size: var(--ParagraphFS);

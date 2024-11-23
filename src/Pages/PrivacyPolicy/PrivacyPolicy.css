@@ -1,0 +1,22 @@
+.privacy-policy {
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .privacy-policy h1, .privacy-policy h2 {
+    color: #333;
+  }
+  
+  .privacy-policy ul {
+    margin-left: 20px;
+  }
+  
+  .privacy-policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+  
