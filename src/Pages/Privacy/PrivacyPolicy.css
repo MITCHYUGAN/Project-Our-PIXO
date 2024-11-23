@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.policy-container{
+    height: 100%;
+    background-color: #fff;
+    padding: 7% 12%;
+}
+.policy-container .heading{
+    position: relative;
+    color: #333;
+    font-size: 40px;
+    padding-bottom: 7px;
+    margin-bottom: 60px;
+}
+.policy-container .heading::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 4px;
+    background-color: orangered;
+    border-radius: 50px;
+}
+
+.policy-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.policy-content .heading{
+    font-size: 19px;
+    font-weight: 600;
+}
+.policy-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.policy-content div p.header{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.policy-content div p{
+    color: grey;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+
+[data-custom-class='body'], [data-custom-class='body'] * {
+    background: transparent !important;
+  }
+[data-custom-class='title'], [data-custom-class='title'] * {
+    font-family: Arial !important;
+font-size: 26px !important;
+color: #000000 !important;
+  }
+[data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
+    font-family: Arial !important;
+color: #595959 !important;
+font-size: 14px !important;
+  }
+[data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
+    font-family: Arial !important;
+font-size: 19px !important;
+color: #000000 !important;
+  }
+[data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
+    font-family: Arial !important;
+font-size: 17px !important;
+color: #000000 !important;
+  }
+[data-custom-class='body_text'], [data-custom-class='body_text'] * {
+    color: #595959 !important;
+font-size: 14px !important;
+font-family: Arial !important;
+  }
+[data-custom-class='link'], [data-custom-class='link'] * {
+    color: rgb(255, 47, 0) !important;
+font-size: 14px !important;
+font-family: Arial !important;
+word-break: break-word !important;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+  ul > li > ul {
+    list-style-type: circle;
+  }
+  ul > li > ul > li > ul {
+    list-style-type: square;
+  }
+  ol li {
+    font-family: Arial ;
+  }
+  ul li {
+    list-style-position: inside;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .scroll_to_top{
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    font-size: 30px;
+    transition: .5s ease;
+    cursor: pointer;
+  }
+  .scroll_to_top.visible{
+    bottom: 20px;
+  }
