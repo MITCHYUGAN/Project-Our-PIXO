@@ -161,7 +161,6 @@
 
 @media (max-width: 600px) {
     .howitworks{
-        padding: 50px 20px;
         .startCreating{
             .steps{
                 gap: 1px;
