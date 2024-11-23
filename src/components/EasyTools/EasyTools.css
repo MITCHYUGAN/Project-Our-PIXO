@@ -1,12 +1,13 @@
 .easytools {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
+    height: auto;
     display: grid;
     place-items: center;
     position: relative;
     align-items: center;
     gap: 50px;
-    padding: 100px 0;
+    padding: 100px 20px;
 
     .arrow1 {
         position: absolute;
@@ -29,12 +30,10 @@
     }
 
     .easytoolswrapper {
-        /* display: flex; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
         width: 90%;
-        /* flex-wrap: wrap; */
         gap: 50px;
         align-items: flex-start;
         justify-content: center;
@@ -49,7 +48,7 @@
             gap: 20px;
 
             img {
-                width: 70px;
+                width: 40px;
                 height: auto;
             }
 
@@ -73,6 +72,7 @@
     button {
         font-size: var(--buttonFS);
         padding: 15px 30px;
+        margin-top:40px;
         cursor: pointer;
         color: white;
         background-color: var(--main-red);
@@ -101,17 +101,16 @@
 }
 
 @media (max-width: 600px) {
-    .easytools h1 {
-        font-size: var(--Heading3FS);
-        text-align: center;
-        margin-top: 50px;
-    }
     .easytools {
-        padding: 50px 0;
-        padding-bottom: 100px;
+        padding: 50px 0px 80px 0px;
         .arrow1,
         .arrow2 {
             width: 100px;
+        }
+
+        .easytools h1 {
+            font-size: var(--Heading3FS);
+            text-align: center;
         }
 
         .easytoolswrapper {
@@ -137,6 +136,7 @@
         button {
             font-size: var(--button2FS);
             padding: 15px 30px;
+            margin-top: -10px;
             cursor: pointer;
             color: white;
             background-color: var(--main-red);
