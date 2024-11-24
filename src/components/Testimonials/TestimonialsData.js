@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const TestimonialData = [
+export const TestimonialData = [
     {
         img: require("./assets/review-1.jpg"), 
         name: "Isaac Saleh",

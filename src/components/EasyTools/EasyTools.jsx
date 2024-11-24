@@ -4,7 +4,7 @@ import arrow2 from "./assets/arrow2.svg";
 import "./EasyTools.css";
 
 // eslint-disable-next-line react/prop-types
-const EasyTools = ({ easytoolsdata, displayBtn }) => {
+const EasyTools = ({ easytoolsdata, displayBtn, imageStyle }) => {
   return (
     <section className="easytools">
       <img className="arrow1" src={arrow1} alt="" />
@@ -15,8 +15,8 @@ const EasyTools = ({ easytoolsdata, displayBtn }) => {
           easytoolsdata.map(({ id, h3, img, p }) => {
             return (
               <div className="tool" key={id}>
-                <div>
-                  <img src={img} alt="" />
+                <div className="easytools-img-wrapper">
+                  <img src={img} alt="" style={imageStyle} />
                 </div>
                 <div>
                   <h3>{h3}</h3>
