@@ -92,7 +92,7 @@ const Footer = () => {
               <h3>Company</h3>
               <ul>
                 <li>
-                  <Link to="/privacy-policy/" target="_blank">
+                  <Link to="/privacy-policy">
                     Privacy Policy
                   </Link>
                 </li>
