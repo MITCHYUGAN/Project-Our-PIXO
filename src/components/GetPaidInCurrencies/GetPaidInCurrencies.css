@@ -61,7 +61,7 @@
     }
 
     h1 {
-        font-size: var(--Heading1FS);
+        font-size: var(--Heading2FS);
         width: min(1500px, 90%);
         text-align: center;
     }

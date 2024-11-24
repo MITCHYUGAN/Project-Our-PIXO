@@ -39,7 +39,7 @@
             
             li{
                 cursor: pointer;
-                font-size: var(--buttonFS);
+                font-size: var(--button2FS);
             }
             li a {
                 color: black;
@@ -47,7 +47,6 @@
             }
             
             button{
-                /* font-size: clamp(16px, 1vw, 2vw); */
                 font-size: var(--button2FS);
                 padding: 15px 20px;
                 cursor: pointer;

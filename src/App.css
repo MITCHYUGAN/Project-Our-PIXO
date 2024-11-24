@@ -17,9 +17,9 @@
     --Heading3FS: clamp(30px, 1.7vw, 3.5vw);
     --Heading4FS: clamp(20px, 1.5vw, 2vw);
     --ParagraphFS: clamp(18px, 1.3vw, 1.5vw);
-    --PAragraph2FS: clamp(16px, 1.3vw, 1.5vw)
+    --Paragraph2FS: clamp(16px, 1.3vw, 1.5vw)
     --buttonFS: clamp(16px, 1.2vw, 1.4vw);
-    --button2FS: clamp(14px,1.1vw, 1.2vw)
+    --button2FS: clamp(16px,1.1vw, 1.2vw)
 }
 
 p {

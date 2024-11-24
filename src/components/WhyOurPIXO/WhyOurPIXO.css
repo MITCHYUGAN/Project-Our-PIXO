@@ -46,7 +46,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
 }
 
 .benefits-item {
@@ -72,7 +72,6 @@
 .benefits-item p {
     font-size: var(--ParagraphFS);
     color: #333333;
-    width: min(320px, 100%);
 }
 
 
