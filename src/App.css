@@ -19,7 +19,7 @@
     --ParagraphFS: clamp(18px, 1.3vw, 1.5vw);
     --Paragraph2FS: clamp(16px, 1.3vw, 1.5vw)
     --buttonFS: clamp(16px, 1.2vw, 1.4vw);
-    --button2FS: clamp(16px,1.1vw, 1.2vw)
+    --button2FS: clamp(16px,1.1vw, 1.2vw);
 }
 
 p {
