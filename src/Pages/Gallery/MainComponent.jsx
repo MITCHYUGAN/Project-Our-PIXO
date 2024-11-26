@@ -1,12 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./Gallery.css";
-import GallerySection from "./GallerySection";
+import GalleryBanner from "./GalleryBanner";
+import ClientGallery from "./ClientGallery";
 import BookingSection from "./BookingSection";
 import MarketplaceSection from "./MarketplaceSection";
-import GalleryBanner from "./GalleryBanner";
 import GetStartedForFree from "../../components/GetStartedForFree/GetStartedForFree";
 import DropdownArrow from "./assets/down-arrow-icon.svg";
+import Badge from "./Badge";
 
 function MainComponent() {
   const [selectedSection, setSelectedSection] = useState("client-gallery");
@@ -23,7 +24,7 @@ function MainComponent() {
     }
 
     // scroll to top of page
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
   }, [location]);
 
   const handleSelectionChange = (value) => {
@@ -34,13 +35,13 @@ function MainComponent() {
   const renderSelectedSection = () => {
     switch (selectedSection) {
       case "client-gallery":
-        return <GallerySection />;
+        return <ClientGallery />;
       case "bookings":
         return <BookingSection />;
       case "marketplace":
         return <MarketplaceSection />;
       default:
-        return <GallerySection />;
+        return <ClientGallery />;
     }
   };
 
@@ -64,15 +65,29 @@ function MainComponent() {
         <GalleryBanner />
         <div className="sections-wrapper">
           <div className="select-option-wrapper" ref={dropdownRef}>
+            {/* Dropdown Button */}
             <button
               className="dropdown-button"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
-              {selectedSection === "client-gallery"
-                ? "Client Gallery"
-                : selectedSection === "bookings"
-                ? "Bookings"
-                : "Marketplace"}
+              {selectedSection === "client-gallery" ? (
+                <div
+                  className="select"
+                  style={{ borderBottom: "2px solid #872032", lineHeight: "60px" }}
+                >
+                  Client Gallery
+                </div>
+              ) : selectedSection === "bookings" ? (
+                <div className="select">
+                  Bookings <Badge />
+                  <div className="bottom-line"></div>
+                </div>
+              ) : (
+                <div className="select">
+                  Marketplace <br /> <Badge />
+                  <div className="bottom-line"></div>
+                </div>
+              )}
               <img
                 src={DropdownArrow}
                 alt="dropdown arrow"
@@ -80,7 +95,7 @@ function MainComponent() {
               />
             </button>
 
-            {/* Dropdown options */}
+            {/* Dropdown Options */}
             {isDropdownOpen && (
               <div className="dropdown-menu">
                 <div
@@ -103,6 +118,7 @@ function MainComponent() {
                 </div>
               </div>
             )}
+            <div className="line"></div>
           </div>
 
           {/* Render the selected section below the dropdown */}
