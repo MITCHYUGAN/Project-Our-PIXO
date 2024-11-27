@@ -9,6 +9,7 @@
     gap: 50px;
     padding: 100px 20px;
 
+
     .arrow1 {
         position: absolute;
         width: 100px;
@@ -31,9 +32,10 @@
 
     .easytoolswrapper {
         display: grid;
+        padding: 0 30px;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
-        width: 90%;
+        width: 100%;
         gap: 50px;
         align-items: flex-start;
         justify-content: center;

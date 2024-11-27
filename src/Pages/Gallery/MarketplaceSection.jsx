@@ -1,10 +1,10 @@
-import ComingSoon from "./ComingSoon";
+import ComingSoon1 from "./ComingSoon1";
 
 // MarketplaceSection.js
 function MarketplaceSection() {
   return (
     <div className="marketplace-section">
-      <ComingSoon />
+      <ComingSoon1 />
     </div>
   );
 }
