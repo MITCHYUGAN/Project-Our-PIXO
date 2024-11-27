@@ -3,7 +3,6 @@ import React from 'react'
 function ComingSoon1() {
   return (
     <div className="coming-soon-section">
-      <h2>Coming Soon</h2>
       <p>
       Connect with new clients and opportunities. Showcase your services, 
       reach a wider audience, and boost your revenue. Network and collaborate 
