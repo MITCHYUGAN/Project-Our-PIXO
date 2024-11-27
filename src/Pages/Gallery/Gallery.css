@@ -9,13 +9,15 @@
   transform: translate(-50%, -50%);
   /* margin: 0 auto; */
   margin-top: 40px;
-  font-size: 11px;
   width: 110px;
     /* border-bottom: 2px solid #872032; */
-    /* padding-bottom: 17px; */
-    background-color: rgb(188, 32, 59, 0.167);
-    padding: 5px 15px;
-    color: rgb(188, 32, 59, 0.9);
+    /* padding-bottom: 17px; */ 
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(219, 234, 254);
+    padding: 5px 10px;
+    color: rgb(37, 99, 235);
+    border-radius: 5px;
     border-radius: 5px;
 }
 
@@ -221,15 +223,7 @@
     text-align: center;
     padding: 0 5%;
 }
-.coming-soon-section h2 {
-    font-size: 12px;
-    font-weight: 500;
-    /* padding-bottom: 17px; */
-    background-color: rgb(219, 234, 254);
-    padding: 5px 10px;
-    color: rgb(37, 99, 235);
-    border-radius: 5px;
-}
+
 .coming-soon-section p {
     font-size: var(--ParagraphFS);
     line-height: 27px;
