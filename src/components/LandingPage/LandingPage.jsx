@@ -31,7 +31,7 @@ const LandingPage = () => {
           <img src={circle} className='shape shape6' alt="" />
           <img src={circle} className='shape shape8' alt="" />
         </div>
-        <a href="#">
+        <a href="https://app.pixomaticc.com/auth/signup">
           <button className="button">Get Started</button>
         </a>
         <div className='images-shapes'>
